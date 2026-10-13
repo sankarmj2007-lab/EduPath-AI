@@ -1,0 +1,31 @@
+,AI Engineer,ASIC Verification Engineer,Analog Design Engineer,Backend Developer,Cloud Engineer,Communication Systems Engineer,Computer Networks Engineer,Computer Vision Engineer,Cybersecurity Analyst,DSP Engineer,Data Analyst,Data Scientist,Database Administrator,Deep Learning Engineer,DevOps Engineer,Digital Design Engineer,Embedded Engineer,FPGA Design Engineer,Frontend Developer,Full Stack Developer,Game Developer,IoT Engineer,Machine Learning Engineer,Mobile App Developer,PCB Design Engineer,QA Automation Engineer,Robotics Engineer,Software Developer,VLSI Design Engineer,Web Developer
+AI Engineer,5,0,0,0,0,0,0,3,0,0,2,3,0,2,1,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0
+ASIC Verification Engineer,0,6,1,0,0,0,0,0,0,2,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,3,0
+Analog Design Engineer,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4,0,0,0,0,0
+Backend Developer,0,0,0,9,0,0,0,0,1,0,1,0,0,0,0,0,1,0,5,2,0,0,0,6,0,0,0,0,1,1
+Cloud Engineer,0,0,0,0,5,0,3,0,0,0,0,0,3,0,7,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+Communication Systems Engineer,0,0,0,0,0,10,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Computer Networks Engineer,0,0,0,0,2,0,7,1,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0
+Computer Vision Engineer,1,0,0,0,0,0,0,10,0,0,2,1,0,9,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+Cybersecurity Analyst,0,1,0,0,0,0,0,0,11,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DSP Engineer,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Data Analyst,1,0,0,0,0,0,0,5,0,0,8,3,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+Data Scientist,2,0,0,0,0,0,0,1,0,0,1,9,0,2,0,0,0,0,0,0,0,0,2,0,0,2,0,1,0,0
+Database Administrator,0,0,0,0,0,0,0,0,0,0,0,0,10,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deep Learning Engineer,2,0,0,0,0,0,0,7,0,0,3,0,0,7,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,1
+DevOps Engineer,0,0,0,0,7,0,3,0,0,0,0,1,0,1,9,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+Digital Design Engineer,0,1,2,0,0,1,0,0,0,0,0,0,0,0,0,5,0,3,0,0,0,0,0,0,1,0,0,0,4,0
+Embedded Engineer,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,14,0,0,0,0,6,0,0,0,0,0,0,0,0
+FPGA Design Engineer,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,3,0,0,0,0,0,0,1,0,1,0,2,0
+Frontend Developer,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,2,0,0,0,0,0,4
+Full Stack Developer,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,4,0,0,0,4,0,0,0,1,0,2
+Game Developer,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,10,0,0,0,0,7,0,8,0,0
+IoT Engineer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,5,0,0,0,0,0,0,1,1
+Machine Learning Engineer,2,0,0,0,0,0,1,1,0,0,1,2,0,4,0,0,0,0,0,0,0,0,11,1,0,0,0,0,0,0
+Mobile App Developer,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,0,0,1,16,0,0,0,0,0,1
+PCB Design Engineer,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,7,0,0,0,0,0
+QA Automation Engineer,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,6,0,0,0,0,14,0,8,0,0
+Robotics Engineer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0
+Software Developer,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,0,0,0,0,8,0,14,0,0
+VLSI Design Engineer,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,4,0,1,0,0,0,0,0,0,0,0,0,0,8,0
+Web Developer,1,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7,2,0,2,0,5,0,0,0,0,0,7

@@ -1,0 +1,1170 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700&display=swap');
+
+/* =====================================================
+   EDUPATH AI – PROFESSIONAL THEME
+   Loaded LAST (after style.css, premium.css, premium_v2.css).
+   Overrides the look only. No IDs, classes or JS are changed.
+   To go back to the old dark theme, remove the
+   <link href="professional.css"> line from index.html.
+===================================================== */
+
+:root {
+    --ep-bg: #F5F7FA;
+    --ep-card: #FFFFFF;
+    --ep-ink: #0E1726;
+    --ep-muted: #4A5568;
+    --ep-line: #E3E8EF;
+    --ep-input-line: #D5DCE6;
+    --ep-accent: #2447F5;
+    --ep-accent-dark: #1B38C4;
+    --ep-accent-soft: #E9EEFF;
+    --ep-warm: #FFC93C;
+    --ep-shadow: 0 20px 40px rgba(14, 23, 38, 0.08);
+    --ep-shadow-sm: 0 6px 16px rgba(14, 23, 38, 0.06);
+    --ep-display: 'Sora', sans-serif;
+    --ep-body: 'Manrope', sans-serif;
+}
+
+/* ---------- Base ---------- */
+html body {
+    background: var(--ep-bg) !important;
+    color: var(--ep-ink) !important;
+    font-family: var(--ep-body) !important;
+    line-height: 1.6;
+    color-scheme: light;
+}
+
+/* remove old glow / particle backgrounds */
+html body::before,
+html body::after {
+    display: none !important;
+    content: none !important;
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body .logo {
+    font-family: var(--ep-display) !important;
+    color: var(--ep-ink) !important;
+    letter-spacing: -0.01em;
+}
+
+html body p,
+html body small,
+html body li {
+    color: var(--ep-muted);
+}
+
+html body ::selection {
+    background: var(--ep-accent);
+    color: #fff;
+}
+
+html body .hidden {
+    display: none !important;
+}
+
+/* ---------- Navbar ---------- */
+html body .navbar {
+    background: rgba(255, 255, 255, 0.92) !important;
+    border-bottom: 1px solid var(--ep-line) !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(12px) !important;
+}
+
+html body .logo {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+html body .logo span {
+    color: var(--ep-accent) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--ep-accent) !important;
+}
+
+html body .nav-links a {
+    color: #3F4A5C !important;
+    font-weight: 600;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+html body .nav-links a:hover {
+    color: var(--ep-accent) !important;
+}
+
+html body .nav-links a.nav-cta {
+    background: var(--ep-accent) !important;
+    color: #fff !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    padding: 11px 22px !important;
+}
+
+html body .nav-links a.nav-cta:hover {
+    background: var(--ep-accent-dark) !important;
+    color: #fff !important;
+}
+
+/* ---------- Buttons ---------- */
+html body .primary-button {
+    background: var(--ep-accent) !important;
+    color: #fff !important;
+    border: 0 !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(36, 71, 245, 0.25) !important;
+    transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+html body .primary-button:hover {
+    background: var(--ep-accent-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(36, 71, 245, 0.30) !important;
+}
+
+html body .primary-button:disabled {
+    opacity: .6;
+    transform: none;
+    cursor: not-allowed;
+}
+
+html body .secondary-button {
+    background: #fff !important;
+    color: var(--ep-ink) !important;
+    border: 1px solid var(--ep-input-line) !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    box-shadow: none !important;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+html body .secondary-button:hover {
+    border-color: var(--ep-accent) !important;
+    color: var(--ep-accent) !important;
+    transform: translateY(-2px);
+}
+
+/* ---------- Hero ---------- */
+html body .hero {
+    background: transparent !important;
+}
+
+html body .hero h1 {
+    font-size: clamp(38px, 5.2vw, 58px);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+html body .hero h1 span {
+    color: var(--ep-accent) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--ep-accent) !important;
+}
+
+html body .hero-description,
+html body .hero p {
+    color: #3F4A5C !important;
+}
+
+html body .eyebrow {
+    display: inline-block;
+    background: var(--ep-warm) !important;
+    color: var(--ep-ink) !important;
+    border: 0 !important;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    box-shadow: none !important;
+}
+
+/* ---------- Roadmap card ---------- */
+html body .roadmap-card,
+html body .about-visual-card {
+    background: var(--ep-card) !important;
+    border: 1px solid var(--ep-line) !important;
+    border-radius: 24px !important;
+    box-shadow: var(--ep-shadow) !important;
+    backdrop-filter: none !important;
+}
+
+html body .roadmap-step {
+    background: var(--ep-bg) !important;
+    border: 1px solid transparent !important;
+    border-radius: 14px !important;
+    box-shadow: none !important;
+}
+
+html body .roadmap-step.active {
+    background: #fff !important;
+    border: 2px solid var(--ep-accent) !important;
+}
+
+html body .roadmap-step strong {
+    color: var(--ep-ink) !important;
+}
+
+html body .roadmap-number,
+html body .about-point > span {
+    background: var(--ep-accent) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+}
+
+html body .roadmap-step:not(.active):not(.completed) .roadmap-number {
+    background: var(--ep-accent-soft) !important;
+    color: var(--ep-accent) !important;
+}
+
+html body .roadmap-connector {
+    background: var(--ep-line) !important;
+    box-shadow: none !important;
+}
+
+html body .step-check {
+    color: var(--ep-accent) !important;
+}
+
+html body .status-dot {
+    background: #22C55E !important;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18) !important;
+}
+
+/* ---------- Sections ---------- */
+html body .section {
+    background: transparent !important;
+}
+
+html body .section-heading h2,
+html body .about-content h2 {
+    font-size: clamp(28px, 3.6vw, 38px);
+    font-weight: 700;
+}
+
+html body .features-section {
+    background: #fff !important;
+    border-top: 1px solid var(--ep-line);
+    border-bottom: 1px solid var(--ep-line);
+}
+
+html body .feature-card {
+    background: var(--ep-bg) !important;
+    border: 1px solid var(--ep-line) !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+html body .feature-card:hover {
+    transform: translateY(-4px);
+    background: #fff !important;
+    border-color: var(--ep-accent) !important;
+    box-shadow: var(--ep-shadow-sm) !important;
+}
+
+html body .feature-icon {
+    background: var(--ep-accent-soft) !important;
+    border: 0 !important;
+    border-radius: 14px !important;
+    box-shadow: none !important;
+}
+
+html body .feature-card h3 {
+    font-size: 20px;
+}
+
+/* ---------- Form ---------- */
+html body .form-card {
+    background: var(--ep-card) !important;
+    border: 1px solid var(--ep-line) !important;
+    border-radius: 24px !important;
+    box-shadow: var(--ep-shadow) !important;
+    backdrop-filter: none !important;
+}
+
+html body .form-group label {
+    color: var(--ep-ink) !important;
+    font-weight: 600;
+}
+
+html body .form-group input,
+html body .form-group select,
+html body .form-group textarea {
+    background: #fff !important;
+    color: var(--ep-ink) !important;
+    border: 1px solid var(--ep-input-line) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+html body .form-group input::placeholder,
+html body .form-group textarea::placeholder {
+    color: #8A94A6 !important;
+}
+
+html body .form-group input:focus,
+html body .form-group select:focus,
+html body .form-group textarea:focus {
+    outline: none !important;
+    border-color: var(--ep-accent) !important;
+    box-shadow: 0 0 0 4px rgba(36, 71, 245, 0.14) !important;
+}
+
+html body .form-group select option {
+    background: #fff;
+    color: var(--ep-ink);
+}
+
+html body .form-group small {
+    color: var(--ep-muted) !important;
+}
+
+html body .form-message.success {
+    color: #15803D !important;
+}
+
+html body .form-message.error {
+    color: #B91C1C !important;
+}
+
+/* ---------- Results ---------- */
+html body .results {
+    border-top: 1px solid var(--ep-line);
+}
+
+html body .result-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+html body .result-stat,
+html body .result-panel {
+    background: var(--ep-bg) !important;
+    border: 1px solid var(--ep-line) !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+html body .result-stat h3 {
+    color: var(--ep-accent) !important;
+}
+
+html body .result-panel h3 {
+    color: var(--ep-ink) !important;
+}
+
+html body .result-list li,
+html body .resource-item {
+    background: #fff !important;
+    border: 1px solid var(--ep-line) !important;
+    border-radius: 12px !important;
+    color: var(--ep-muted) !important;
+    box-shadow: none !important;
+}
+
+html body .result-list li strong,
+html body .resource-item strong {
+    color: var(--ep-ink) !important;
+}
+
+html body .resource-item a {
+    color: var(--ep-accent) !important;
+    font-weight: 600;
+}
+
+html body .result-tag {
+    background: var(--ep-accent-soft) !important;
+    color: var(--ep-accent) !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+html body .footer {
+    background: #fff !important;
+    border-top: 1px solid var(--ep-line) !important;
+}
+
+html body .footer p {
+    color: var(--ep-muted) !important;
+}
+
+/* ---------- Accessibility ---------- */
+html body a:focus-visible,
+html body button:focus-visible,
+html body input:focus-visible,
+html body select:focus-visible,
+html body textarea:focus-visible {
+    outline: 2px solid var(--ep-accent) !important;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html body * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* =====================================================
+   LAYOUT + CLEANUP (neutralises old glow, gradient text
+   and entrance animations from premium.css / premium_v2.css)
+===================================================== */
+
+/* No gradient-clipped text: every heading uses a solid colour */
+html body *,
+html body *::before,
+html body *::after {
+    -webkit-text-fill-color: currentColor !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    animation: none !important;
+}
+
+/* Content must always be visible (old CSS faded it in) */
+html body :is(
+    .hero, .hero-content, .hero-visual, .roadmap-card, .section,
+    .section-heading, .feature-card, .about-content, .about-visual,
+    .about-visual-card, .form-card, .results, .footer, .hero-actions,
+    .roadmap-step, .about-point
+) {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* Hide decorative glows, grids and underlines */
+html body :is(
+    .hero, .hero-content, .hero-visual, .roadmap-card, .section,
+    .section-heading, .feature-card, .form-card, .about-section,
+    .about-visual-card, .features-section, .form-section, .footer, .navbar
+)::before,
+html body :is(
+    .hero, .hero-content, .hero-visual, .roadmap-card, .section,
+    .section-heading, .feature-card, .form-card, .about-section,
+    .about-visual-card, .features-section, .form-section, .footer, .navbar
+)::after {
+    display: none !important;
+}
+
+/* Container */
+html body .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Navbar */
+html body .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+
+html body .nav-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+html body .nav-links {
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+/* Hero */
+html body .hero {
+    padding: 72px 0 88px !important;
+    min-height: 0 !important;
+}
+
+html body .hero-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 56px;
+    align-items: center;
+}
+
+html body .hero-content {
+    max-width: 560px;
+}
+
+html body .hero h1 {
+    margin: 20px 0 18px !important;
+}
+
+html body .hero-description {
+    font-size: 18px;
+    max-width: 480px;
+    margin-bottom: 32px !important;
+}
+
+html body .hero-actions {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+html body .primary-button,
+html body .secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 28px !important;
+}
+
+/* Roadmap card */
+html body .roadmap-card {
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    padding: 28px !important;
+}
+
+html body .roadmap-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+html body .roadmap-card-header h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+html body .roadmap-step {
+    display: flex !important;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px !important;
+}
+
+html body .roadmap-step p {
+    margin: 0;
+    font-size: 14px;
+}
+
+html body .roadmap-number {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+html body .step-check {
+    margin-left: auto;
+    font-weight: 700;
+}
+
+html body .roadmap-connector {
+    width: 2px !important;
+    height: 14px !important;
+    margin: 0 0 0 33px !important;
+}
+
+/* Sections */
+html body .section {
+    padding: 88px 0 !important;
+}
+
+html body .section-heading {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 48px !important;
+}
+
+html body .section-heading h2 {
+    margin: 16px 0 12px;
+}
+
+html body .features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 24px;
+}
+
+html body .feature-card {
+    padding: 28px !important;
+}
+
+html body .feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+/* About */
+html body .about-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 56px;
+    align-items: center;
+}
+
+html body .about-content p {
+    margin-bottom: 16px;
+}
+
+html body .about-content .primary-button {
+    margin-top: 12px;
+}
+
+html body .about-visual-card {
+    padding: 28px !important;
+}
+
+html body .about-point {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+html body .about-point > span {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+html body .about-point p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Form */
+html body .form-card {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px !important;
+}
+
+html body .form-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 20px;
+}
+
+html body .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+html body .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+html body .form-group input,
+html body .form-group select,
+html body .form-group textarea {
+    width: 100%;
+    padding: 13px 16px;
+}
+
+html body .submit-button {
+    margin-top: 28px;
+    width: 100%;
+}
+
+html body .form-message {
+    margin-top: 14px;
+    text-align: center;
+}
+
+/* Results */
+html body .results {
+    margin-top: 40px;
+    padding-top: 32px;
+}
+
+html body .results-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+html body .result-stat,
+html body .result-panel {
+    padding: 22px !important;
+    margin-bottom: 16px;
+}
+
+html body .result-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 0;
+}
+
+html body .result-list li,
+html body .resource-item {
+    padding: 12px 16px;
+}
+
+/* Footer */
+html body .footer {
+    padding: 36px 0 !important;
+}
+
+html body .footer-content {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    html body .hero { padding: 40px 0 56px !important; }
+    html body .section { padding: 56px 0 !important; }
+    html body .form-card { padding: 24px !important; }
+    html body .roadmap-card { margin-left: 0; }
+    html body .nav-links { gap: 16px; }
+}
+
+/* ---------- Final fixes: solid headings, readable card text ---------- */
+html body :is(h1, h2, h3, h4, .logo, .logo span, .hero h1 span) {
+    background: none !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+html body :is(h1, h2, h3, h4)::before,
+html body :is(h1, h2, h3, h4)::after,
+html body .section-heading h2::after {
+    display: none !important;
+}
+
+html body :is(
+    .feature-card, .roadmap-step, .about-point, .result-panel,
+    .result-stat, .section-heading, .about-content, .form-group,
+    .form-card, .results, .footer
+) :is(p, small, li, span) {
+    color: var(--ep-muted) !important;
+    opacity: 1 !important;
+}
+
+html body :is(.feature-card, .about-point, .roadmap-step) :is(h3, strong) {
+    color: var(--ep-ink) !important;
+}
+
+html body .logo span,
+html body .hero h1 span {
+    color: var(--ep-accent) !important;
+}
+
+html body .roadmap-number,
+html body .about-point > span {
+    color: #fff !important;
+}
+
+html body .roadmap-step:not(.active):not(.completed) .roadmap-number {
+    color: var(--ep-accent) !important;
+}
+
+html body .step-check {
+    color: var(--ep-accent) !important;
+}
+
+html body .eyebrow,
+html body .eyebrow * {
+    color: var(--ep-ink) !important;
+}
+
+/* number badges + check must beat the generic span colour above */
+html body .roadmap-step .roadmap-number,
+html body .about-point > span:first-child {
+    color: #fff !important;
+}
+
+html body .roadmap-step:not(.active):not(.completed) .roadmap-number {
+    color: var(--ep-accent) !important;
+}
+
+html body .roadmap-step .step-check {
+    color: var(--ep-accent) !important;
+}
+
+/* About text left-aligned */
+html body .about-content,
+html body .about-content p,
+html body .about-content h2 {
+    text-align: left !important;
+}
+
+html body .about-content p {
+    max-width: 520px;
+}
+
+/* The form sits inside .form-card, so the inner form is not a second card */
+html body .student-form {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    backdrop-filter: none !important;
+}
+
+html body .footer-content p {
+    margin: 0;
+}
+
+/* ---------- Weekly study plan ---------- */
+html body .result-panel h4 {
+    margin: 22px 0 14px;
+    font-family: var(--ep-display);
+    font-size: 16px;
+    color: var(--ep-ink) !important;
+}
+
+html body .week-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 14px;
+}
+
+html body .week-card {
+    background: #fff !important;
+    border: 1px solid var(--ep-line);
+    border-radius: 16px;
+    padding: 18px;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+html body .week-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--ep-accent);
+    box-shadow: var(--ep-shadow-sm);
+}
+
+html body .week-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+html body .week-card .week-number {
+    font-family: var(--ep-display);
+    font-weight: 700;
+    color: var(--ep-ink) !important;
+}
+
+html body .week-card .week-hours {
+    background: var(--ep-accent-soft);
+    color: var(--ep-accent) !important;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+html body .week-card .week-dates {
+    margin: 6px 0 12px;
+    font-size: 13px;
+}
+
+html body .week-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+html body .week-more {
+    margin-top: 16px;
+}
+
+html body .week-more > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ep-accent);
+    padding: 10px 0;
+    list-style: none;
+}
+
+html body .week-more > summary::-webkit-details-marker {
+    display: none;
+}
+
+html body .week-more[open] > summary {
+    margin-bottom: 8px;
+}
+
+/* School weekly plan: topic list inside a week card */
+html body .week-topics {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+html body .week-card .week-topics li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--ep-bg) !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    padding: 9px 12px !important;
+}
+
+html body .week-card .week-topics li span {
+    color: var(--ep-ink) !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+html body .week-card .week-topics li small {
+    color: var(--ep-muted) !important;
+    font-size: 12px;
+}
+
+/* School weekly plan: revision, practice and mock test rows */
+html body .week-card .week-topics li.is-review {
+    background: var(--ep-accent-soft) !important;
+}
+
+html body .week-card .week-topics li small.week-note {
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+/* =====================================================
+   CHARTS: rings, bars, stacked bars
+   Pure CSS and SVG. Values come in through the --value variable.
+===================================================== */
+html body {
+    --tone-accent: #2447F5;
+    --tone-mid: #6F89FF;
+    --tone-light: #B4C2FF;
+    --tone-warm: #FFC93C;
+    --tone-ink: #0E1726;
+    --tone-track: #E8ECF3;
+}
+
+html body .tone-accent { background: var(--tone-accent); }
+html body .tone-mid    { background: var(--tone-mid); }
+html body .tone-light  { background: var(--tone-light); }
+html body .tone-warm   { background: var(--tone-warm); }
+html body .tone-ink    { background: var(--tone-ink); }
+
+/* ---------- Ring ---------- */
+html body .result-stat.has-ring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+html body .ring {
+    position: relative;
+    width: 112px;
+    height: 112px;
+}
+
+html body .ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+html body .ring circle {
+    fill: none;
+    stroke-width: 11;
+}
+
+html body .ring-track {
+    stroke: var(--tone-track);
+}
+
+html body .ring-value {
+    stroke: var(--tone-accent);
+    stroke-linecap: round;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 1s cubic-bezier(.2, .7, .2, 1);
+}
+
+html body .ring-value.is-ready {
+    stroke-dasharray: var(--value) 100;
+}
+
+html body .ring-number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ep-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ep-ink) !important;
+}
+
+/* ---------- Bars ---------- */
+html body .chart-block {
+    margin: 18px 0 22px;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid var(--ep-line);
+    border-radius: 16px;
+}
+
+html body .chart-block h4 {
+    margin: 0 0 14px;
+}
+
+html body .bar-row {
+    margin-bottom: 14px;
+}
+
+html body .bar-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+html body .bar-label span {
+    color: var(--ep-ink) !important;
+    font-weight: 600;
+}
+
+html body .bar-label strong {
+    color: var(--ep-muted) !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+html body .bar-track {
+    height: 10px;
+    background: var(--tone-track);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+html body .bar-fill {
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    transition: width .9s cubic-bezier(.2, .7, .2, 1);
+}
+
+html body .bar-fill.is-ready {
+    width: var(--value);
+}
+
+/* bar inside list items (career predictions) */
+html body .result-list li .bar-track {
+    margin-top: 8px;
+}
+
+/* ---------- Stacked bar ---------- */
+html body .stack-bar {
+    display: flex;
+    height: 14px;
+    margin: 14px 0 10px;
+    background: var(--tone-track);
+    border-radius: 999px;
+    overflow: hidden;
+    gap: 2px;
+}
+
+html body .stack-seg {
+    width: 0;
+    height: 100%;
+    transition: width .9s cubic-bezier(.2, .7, .2, 1);
+}
+
+html body .stack-seg.is-ready {
+    width: var(--value);
+}
+
+/* ---------- Legend ---------- */
+html body .chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+html body .result-list.chart-legend li,
+html body .chart-legend li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 !important;
+    background: none !important;
+    border: 0 !important;
+    font-size: 13px;
+    color: var(--ep-muted) !important;
+}
+
+html body .chart-legend li strong {
+    color: var(--ep-ink) !important;
+}
+
+html body .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Overview cards: same alignment for ring cards and number cards */
+html body .result-overview .result-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+html body .result-overview .result-stat h3 {
+    font-size: 34px;
+    margin: 0;
+}
+
+html body .ring .ring-number {
+    color: var(--ep-ink) !important;
+}

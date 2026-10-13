@@ -1,0 +1,742 @@
+[
+  {
+    "resource_id": "R001",
+    "skill": "C Programming",
+    "type": "website",
+    "title": "Learn C Programming",
+    "url": "https://www.learn-c.org/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R002",
+    "skill": "C Programming",
+    "type": "youtube",
+    "title": "Neso Academy C Programming Tutorials",
+    "url": "https://www.youtube.com/@nesoacademy",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R003",
+    "skill": "Python Programming",
+    "type": "website",
+    "title": "Official Python Tutorial",
+    "url": "https://docs.python.org/3/tutorial/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R004",
+    "skill": "Python Programming",
+    "type": "practice",
+    "title": "HackerRank Python Practice",
+    "url": "https://www.hackerrank.com/domains/python",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R005",
+    "skill": "HTML",
+    "type": "website",
+    "title": "MDN HTML Guide",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R006",
+    "skill": "CSS",
+    "type": "website",
+    "title": "MDN CSS Guide",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R007",
+    "skill": "JavaScript",
+    "type": "website",
+    "title": "JavaScript Guide",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R008",
+    "skill": "Flask",
+    "type": "website",
+    "title": "Official Flask Documentation",
+    "url": "https://flask.palletsprojects.com/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R009",
+    "skill": "SQL",
+    "type": "website",
+    "title": "SQLBolt Interactive Lessons",
+    "url": "https://sqlbolt.com/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R010",
+    "skill": "Machine Learning",
+    "type": "website",
+    "title": "Scikit-learn User Guide",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R011",
+    "skill": "Machine Learning",
+    "type": "course",
+    "title": "Google Machine Learning Crash Course",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R012",
+    "skill": "Pandas",
+    "type": "website",
+    "title": "Pandas Getting Started",
+    "url": "https://pandas.pydata.org/docs/getting_started/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R013",
+    "skill": "NumPy",
+    "type": "website",
+    "title": "NumPy Quickstart",
+    "url": "https://numpy.org/doc/stable/user/quickstart.html",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R014",
+    "skill": "Embedded C",
+    "type": "youtube",
+    "title": "Embedded Systems Tutorials - ControllersTech",
+    "url": "https://www.youtube.com/@ControllersTech",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R015",
+    "skill": "ESP32 Development",
+    "type": "website",
+    "title": "Espressif ESP-IDF Programming Guide",
+    "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R016",
+    "skill": "Microcontrollers",
+    "type": "website",
+    "title": "Arduino Documentation",
+    "url": "https://docs.arduino.cc/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R017",
+    "skill": "Digital Electronics",
+    "type": "website",
+    "title": "All About Circuits - Digital",
+    "url": "https://www.allaboutcircuits.com/textbook/digital/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R018",
+    "skill": "Verilog",
+    "type": "website",
+    "title": "ASIC World Verilog Tutorials",
+    "url": "https://www.asic-world.com/verilog/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R019",
+    "skill": "Data Structures",
+    "type": "practice",
+    "title": "HackerRank Data Structures",
+    "url": "https://www.hackerrank.com/domains/data-structures",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R020",
+    "skill": "Git",
+    "type": "website",
+    "title": "Git Documentation",
+    "url": "https://git-scm.com/doc",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R021",
+    "skill": "SystemVerilog",
+    "type": "Course",
+    "title": "SystemVerilog Academy - Free Learning Paths",
+    "url": "https://www.systemverilogacademy.com/courses",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R022",
+    "skill": "VLSI Design",
+    "type": "Tutorial",
+    "title": "VLSI Mentor - Free Learning Library",
+    "url": "https://www.vlsimentor.com/learnings",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R023",
+    "skill": "Verilog",
+    "type": "Course",
+    "title": "AMD - Designing with Verilog",
+    "url": "https://docs.amd.com/api/khub/documents/qfE334lSdsI980HYHNsHxA/content",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R024",
+    "skill": "FPGA Design",
+    "type": "Tutorial",
+    "title": "Altera FPGA Training Resources",
+    "url": "https://docs.altera.com/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R025",
+    "skill": "ASIC Verification",
+    "type": "Tutorial",
+    "title": "VLSI Mentor - Verification Learning",
+    "url": "https://www.vlsimentor.com/learnings",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R026",
+    "skill": "Cybersecurity",
+    "type": "Course",
+    "title": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R027",
+    "skill": "Cybersecurity",
+    "type": "Reference",
+    "title": "NIST Free and Low-Cost Cybersecurity Learning",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/online-learning-content",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R028",
+    "skill": "Cloud Computing",
+    "type": "Course",
+    "title": "NIELIT Virtual Academy",
+    "url": "https://lms.nielit.gov.in/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R029",
+    "skill": "DevOps",
+    "type": "Course",
+    "title": "Linux Foundation Learning Resources",
+    "url": "https://training.linuxfoundation.org/resources/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R030",
+    "skill": "Computer Networks",
+    "type": "Course",
+    "title": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R031",
+    "skill": "SQL",
+    "type": "Tutorial",
+    "title": "PostgreSQL Official Documentation",
+    "url": "https://www.postgresql.org/docs/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R032",
+    "skill": "Data Science",
+    "type": "Course",
+    "title": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R033",
+    "skill": "Machine Learning",
+    "type": "Course",
+    "title": "Google Machine Learning Education",
+    "url": "https://developers.google.com/machine-learning",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R034",
+    "skill": "Deep Learning",
+    "type": "Tutorial",
+    "title": "PyTorch Official Tutorials",
+    "url": "https://docs.pytorch.org/tutorials/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R035",
+    "skill": "Computer Vision",
+    "type": "Tutorial",
+    "title": "OpenCV Official Tutorials",
+    "url": "https://docs.opencv.org/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R036",
+    "skill": "JavaScript",
+    "type": "Documentation",
+    "title": "MDN JavaScript Guide",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R037",
+    "skill": "Git",
+    "type": "Tutorial",
+    "title": "Git Official Book",
+    "url": "https://git-scm.com/book/en/v2",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R038",
+    "skill": "Embedded Systems",
+    "type": "Documentation",
+    "title": "ESP-IDF Programming Guide",
+    "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R039",
+    "skill": "Robotics",
+    "type": "Tutorial",
+    "title": "ROS 2 Official Tutorials",
+    "url": "https://docs.ros.org/en/jazzy/Tutorials.html",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R040",
+    "skill": "Digital Signal Processing",
+    "type": "Course",
+    "title": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R041",
+    "skill": "MATLAB",
+    "type": "Course",
+    "title": "MATLAB Onramp",
+    "url": "https://matlabacademy.mathworks.com/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R042",
+    "skill": "PCB Design",
+    "type": "Documentation",
+    "title": "KiCad Official Documentation",
+    "url": "https://docs.kicad.org/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R043",
+    "skill": "REST APIs",
+    "type": "Documentation",
+    "title": "MDN - HTTP and Web APIs",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R044",
+    "skill": "Linux Basics",
+    "type": "Course",
+    "title": "Linux Foundation Learning Resources",
+    "url": "https://training.linuxfoundation.org/resources/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R045",
+    "skill": "STM32 Development",
+    "type": "documentation",
+    "title": "STMicroelectronics STM32 Getting Started",
+    "url": "https://wiki.st.com/stm32mcu/wiki/Getting_started_with_STM32",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R046",
+    "skill": "Object-Oriented Programming",
+    "type": "course",
+    "title": "University of Helsinki Java Programming MOOC",
+    "url": "https://java-programming.mooc.fi/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R047",
+    "skill": "RTOS",
+    "type": "documentation",
+    "title": "FreeRTOS Official Documentation",
+    "url": "https://www.freertos.org/Documentation/RTOS_book.html",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R048",
+    "skill": "Embedded Linux",
+    "type": "documentation",
+    "title": "Yocto Project Documentation",
+    "url": "https://docs.yoctoproject.org/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R049",
+    "skill": "Statistics",
+    "type": "course",
+    "title": "Khan Academy Statistics and Probability",
+    "url": "https://www.khanacademy.org/math/statistics-probability",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R050",
+    "skill": "Scikit-learn",
+    "type": "documentation",
+    "title": "Scikit-learn User Guide",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R051",
+    "skill": "CMOS Design",
+    "type": "course",
+    "title": "NPTEL Online Courses",
+    "url": "https://nptel.ac.in/courses",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R052",
+    "skill": "Algorithms",
+    "type": "course",
+    "title": "MIT OpenCourseWare - Introduction to Algorithms",
+    "url": "https://ocw.mit.edu/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R053",
+    "skill": "Excel",
+    "type": "tutorial",
+    "title": "Microsoft Excel Help and Learning",
+    "url": "https://support.microsoft.com/excel",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R054",
+    "skill": "Data Visualization",
+    "type": "tutorial",
+    "title": "Tableau Free Training Videos",
+    "url": "https://www.tableau.com/learn/training",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R055",
+    "skill": "Power BI",
+    "type": "documentation",
+    "title": "Microsoft Power BI Learning",
+    "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R056",
+    "skill": "Sensors",
+    "type": "tutorial",
+    "title": "Arduino Documentation",
+    "url": "https://docs.arduino.cc/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R057",
+    "skill": "Communication Protocols",
+    "type": "documentation",
+    "title": "Linux Foundation Networking Resources",
+    "url": "https://training.linuxfoundation.org/resources/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R058",
+    "skill": "MQTT",
+    "type": "documentation",
+    "title": "MQTT Official Documentation",
+    "url": "https://mqtt.org/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R059",
+    "skill": "Control Systems",
+    "type": "course",
+    "title": "NPTEL Control Systems Courses",
+    "url": "https://nptel.ac.in/courses",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R060",
+    "skill": "ROS",
+    "type": "tutorial",
+    "title": "ROS 2 Official Tutorials",
+    "url": "https://docs.ros.org/en/jazzy/Tutorials.html",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R061",
+    "skill": "Problem Solving",
+    "type": "practice",
+    "title": "HackerRank Problem Solving",
+    "url": "https://www.hackerrank.com/domains/algorithms",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R062",
+    "skill": "Linear Algebra",
+    "type": "course",
+    "title": "Khan Academy Linear Algebra",
+    "url": "https://www.khanacademy.org/math/linear-algebra",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R063",
+    "skill": "Mathematics",
+    "type": "course",
+    "title": "Khan Academy Mathematics",
+    "url": "https://www.khanacademy.org/math",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R064",
+    "skill": "Boolean Algebra",
+    "type": "tutorial",
+    "title": "All About Circuits - Digital",
+    "url": "https://www.allaboutcircuits.com/textbook/digital/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R065",
+    "skill": "Analog Electronics",
+    "type": "tutorial",
+    "title": "All About Circuits - Semiconductors",
+    "url": "https://www.allaboutcircuits.com/textbook/semiconductors/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R066",
+    "skill": "Circuit Analysis",
+    "type": "tutorial",
+    "title": "All About Circuits - DC",
+    "url": "https://www.allaboutcircuits.com/textbook/direct-current/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R067",
+    "skill": "Signals and Systems",
+    "type": "course",
+    "title": "NPTEL Signals and Systems Courses",
+    "url": "https://nptel.ac.in/courses",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R068",
+    "skill": "Communication Systems",
+    "type": "course",
+    "title": "NPTEL Communication Systems Courses",
+    "url": "https://nptel.ac.in/courses",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R069",
+    "skill": "Database Management",
+    "type": "tutorial",
+    "title": "PostgreSQL Official Documentation",
+    "url": "https://www.postgresql.org/docs/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R070",
+    "skill": "FPGA",
+    "type": "documentation",
+    "title": "AMD FPGA Documentation",
+    "url": "https://docs.amd.com/",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R071",
+    "skill": "ASIC Design",
+    "type": "tutorial",
+    "title": "VLSI Mentor Learning Resources",
+    "url": "https://www.vlsimentor.com/learnings",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R072",
+    "skill": "Static Timing Analysis",
+    "type": "documentation",
+    "title": "OpenSTA Documentation",
+    "url": "https://github.com/The-OpenROAD-Project/OpenSTA",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R073",
+    "skill": "Computer Architecture",
+    "type": "course",
+    "title": "Nand2Tetris",
+    "url": "https://www.nand2tetris.org/",
+    "level": "Beginner",
+    "language": "English",
+    "free": true
+  },
+  {
+    "resource_id": "R074",
+    "skill": "CMOS",
+    "type": "course",
+    "title": "NPTEL Online Courses",
+    "url": "https://nptel.ac.in/courses",
+    "level": "Intermediate",
+    "language": "English",
+    "free": true
+  }
+]

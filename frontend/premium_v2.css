@@ -1,0 +1,3928 @@
+/* =====================================================
+   EDUPATH AI PREMIUM UI
+   PHASE 17.1A
+   Base Theme + Background Optimization
+===================================================== */
+
+
+/* ===============================
+   GLOBAL ROOT SETTINGS
+================================ */
+
+
+:root{
+
+    --primary:
+    #8b5cf6;
+
+    --secondary:
+    #06b6d4;
+
+    --accent:
+    #38bdf8;
+
+    --bg-dark:
+    #050816;
+
+    --glass:
+    rgba(255,255,255,.06);
+
+}
+
+
+
+/* ===============================
+   GLOBAL RESET
+================================ */
+
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    position:relative;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(139,92,246,.25),
+        transparent 40%
+    ),
+
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(6,182,212,.20),
+        transparent 45%
+    ),
+
+
+    linear-gradient(
+        135deg,
+        #050816,
+        #090f1f,
+        #050816
+    );
+
+
+    background-size:
+    300% 300%;
+
+
+    animation:
+
+    backgroundMove 18s ease infinite;
+
+
+}
+
+
+
+/* ===============================
+   PREMIUM GRID + AURORA LAYER
+================================ */
+
+
+body::before{
+
+
+    content:"";
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    pointer-events:none;
+
+
+    z-index:-2;
+
+
+
+    background:
+
+
+    linear-gradient(
+        rgba(255,255,255,.035) 1px,
+        transparent 1px
+    ),
+
+
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,.035) 1px,
+        transparent 1px
+    ),
+
+
+    radial-gradient(
+        circle,
+        rgba(139,92,246,.25),
+        transparent 60%
+    );
+
+
+    background-size:
+
+    60px 60px,
+    60px 60px,
+    100% 100%;
+
+
+    animation:
+
+    gridMove 25s linear infinite;
+
+
+}
+
+
+
+
+
+/* ===============================
+   AI LIGHT GLOW LAYER
+================================ */
+
+
+body::after{
+
+
+    content:"";
+
+
+    position:fixed;
+
+
+    width:700px;
+
+
+    height:700px;
+
+
+    top:20%;
+
+
+    left:50%;
+
+
+    transform:
+
+    translate(-50%,-50%);
+
+
+
+    border-radius:50%;
+
+
+    pointer-events:none;
+
+
+    z-index:-3;
+
+
+
+    background:
+
+
+    radial-gradient(
+        circle,
+        rgba(56,189,248,.20),
+        transparent 65%
+    );
+
+
+
+    filter:
+
+    blur(90px);
+
+
+
+    animation:
+
+    aiGlow 10s ease-in-out infinite;
+
+
+
+}
+
+
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+
+@keyframes backgroundMove{
+
+
+    0%{
+
+        background-position:
+        0% 50%;
+
+    }
+
+
+    50%{
+
+        background-position:
+        100% 50%;
+
+    }
+
+
+    100%{
+
+        background-position:
+        0% 50%;
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes gridMove{
+
+
+    from{
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    to{
+
+        transform:
+        translateY(60px);
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes aiGlow{
+
+
+    0%,100%{
+
+
+        opacity:.5;
+
+
+        transform:
+
+        translate(-50%,-50%)
+        scale(1);
+
+
+    }
+
+
+
+    50%{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translate(-50%,-50%)
+        scale(1.25);
+
+
+    }
+
+
+}
+/* =====================================================
+   PHASE 17.1B
+   Premium Glass Card System Optimization
+===================================================== */
+
+
+/* ===============================
+   UNIVERSAL GLASS CARD
+================================ */
+
+
+.visual-card,
+.feature-card,
+.student-form,
+.result-panel,
+.result-card,
+.ai-result,
+.learning-card,
+.course-card,
+.resource-card,
+.dashboard,
+.dashboard-container{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+
+    border-radius:28px;
+
+
+
+    box-shadow:
+
+
+    0 20px 50px
+
+    rgba(0,0,0,.25);
+
+
+
+    transition:
+
+
+    transform .4s ease,
+
+    box-shadow .4s ease,
+
+    border-color .4s ease;
+
+
+}
+
+
+
+/* ===============================
+   PREMIUM GLOW BORDER
+================================ */
+
+
+.visual-card::before,
+.feature-card::before,
+.student-form::before,
+.result-panel::before,
+.result-card::before,
+.ai-result::before,
+.learning-card::before,
+.course-card::before,
+.resource-card::before,
+.dashboard::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+
+    padding:1px;
+
+
+
+    border-radius:inherit;
+
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(139,92,246,.65),
+
+        rgba(6,182,212,.45),
+
+        transparent
+
+    );
+
+
+
+    -webkit-mask:
+
+
+    linear-gradient(#fff 0 0) content-box,
+
+    linear-gradient(#fff 0 0);
+
+
+
+    mask:
+
+
+    linear-gradient(#fff 0 0) content-box,
+
+    linear-gradient(#fff 0 0);
+
+
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+
+
+    opacity:0;
+
+
+    transition:.4s;
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+
+/* ===============================
+   CARD HOVER
+================================ */
+
+
+.visual-card:hover,
+.feature-card:hover,
+.student-form:hover,
+.result-panel:hover,
+.result-card:hover,
+.ai-result:hover,
+.learning-card:hover,
+.course-card:hover,
+.resource-card:hover,
+.dashboard:hover{
+
+
+    transform:
+
+    translateY(-10px);
+
+
+
+    border-color:
+
+    rgba(56,189,248,.45);
+
+
+
+    box-shadow:
+
+
+    0 30px 70px
+
+    rgba(0,0,0,.35),
+
+
+
+    0 0 35px
+
+    rgba(139,92,246,.20);
+
+
+}
+
+
+
+
+.visual-card:hover::before,
+.feature-card:hover::before,
+.student-form:hover::before,
+.result-panel:hover::before,
+.result-card:hover::before,
+.ai-result:hover::before,
+.learning-card:hover::before,
+.course-card:hover::before,
+.resource-card:hover::before,
+.dashboard:hover::before{
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+/* ===============================
+   CARD INNER SPACING
+================================ */
+
+
+.feature-card,
+.visual-card,
+.result-panel,
+.result-card,
+.student-form{
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+/* ===============================
+   REDUCE MOBILE EFFECTS
+================================ */
+
+
+@media(max-width:768px){
+
+
+    .visual-card,
+    .feature-card,
+    .student-form,
+    .result-panel,
+    .result-card,
+    .dashboard{
+
+
+        transform:none;
+
+
+        backdrop-filter:
+
+        blur(15px);
+
+
+        -webkit-backdrop-filter:
+
+        blur(15px);
+
+
+    }
+
+
+
+    .visual-card:hover,
+    .feature-card:hover,
+    .student-form:hover,
+    .result-panel:hover,
+    .result-card:hover,
+    .dashboard:hover{
+
+
+        transform:
+
+        translateY(-5px);
+
+
+    }
+
+
+}
+/* =====================================================
+   PHASE 17.1C
+   Buttons + Inputs + Typography Optimization
+===================================================== */
+
+
+/* ===============================
+   PREMIUM BUTTON SYSTEM
+================================ */
+
+
+button,
+.btn,
+.primary-button,
+.primary-btn,
+.submit-button,
+.nav-button{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    border:none;
+
+
+    border-radius:14px;
+
+
+    padding:14px 28px;
+
+
+    font-weight:700;
+
+
+    color:white;
+
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+
+
+    box-shadow:
+
+
+    0 15px 35px
+
+    rgba(139,92,246,.35);
+
+
+
+    transition:
+
+
+    transform .35s ease,
+
+    box-shadow .35s ease;
+
+
+}
+
+
+
+
+button:hover,
+.btn:hover,
+.primary-button:hover,
+.primary-btn:hover,
+.submit-button:hover,
+.nav-button:hover{
+
+
+    transform:
+
+    translateY(-5px);
+
+
+
+    box-shadow:
+
+
+    0 25px 50px
+
+    rgba(56,189,248,.35);
+
+
+}
+
+
+
+
+
+/* Button Shine */
+
+
+button::after,
+.btn::after,
+.primary-button::after,
+.primary-btn::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    width:80%;
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+
+
+    transition:.6s;
+
+
+}
+
+
+
+
+button:hover::after,
+.btn:hover::after,
+.primary-button:hover::after,
+.primary-btn:hover::after{
+
+
+    left:120%;
+
+
+}
+
+
+
+
+/* ===============================
+   GLASS INPUT SYSTEM
+================================ */
+
+
+input,
+select,
+textarea{
+
+
+    width:100%;
+
+
+    padding:14px 16px;
+
+
+
+    background:
+
+
+    rgba(255,255,255,.06);
+
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    border-radius:14px;
+
+
+
+    color:white;
+
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(15px);
+
+
+
+    transition:
+
+
+    border-color .3s ease,
+
+    box-shadow .3s ease,
+
+    transform .3s ease;
+
+
+}
+
+
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+
+    outline:none;
+
+
+
+    border-color:
+
+    #38bdf8;
+
+
+
+    box-shadow:
+
+
+    0 0 0 4px
+
+    rgba(56,189,248,.12),
+
+
+
+    0 0 25px
+
+    rgba(56,189,248,.25);
+
+
+
+    transform:
+
+    translateY(-2px);
+
+
+}
+
+
+
+
+::placeholder{
+
+
+    color:
+
+    rgba(255,255,255,.55);
+
+
+}
+
+
+
+
+/* ===============================
+   PREMIUM GRADIENT TEXT
+================================ */
+
+
+.gradient-text,
+h1,
+h2,
+.section-heading h2{
+
+
+    background:
+
+
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #38bdf8,
+        #a855f7,
+        #ffffff
+    );
+
+
+
+    background-size:
+
+    300%;
+
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+
+    -webkit-text-fill-color:transparent;
+
+
+
+    animation:
+
+    textFlow 8s linear infinite;
+
+
+}
+
+
+
+@keyframes textFlow{
+
+
+    from{
+
+        background-position:
+
+        0%;
+
+    }
+
+
+    to{
+
+        background-position:
+
+        300%;
+
+    }
+
+
+}
+
+
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+
+
+@media(max-width:768px){
+
+
+    button,
+    .btn,
+    .primary-button,
+    .primary-btn,
+    .submit-button{
+
+
+        width:100%;
+
+
+        max-width:320px;
+
+
+    }
+
+
+
+}
+/* =====================================================
+   PHASE 17.1D
+   Animation Optimization + Performance Tuning
+===================================================== */
+
+
+/* ===============================
+   GPU OPTIMIZATION
+================================ */
+
+
+.visual-card,
+.feature-card,
+.student-form,
+.result-card,
+.dashboard,
+button,
+.btn{
+
+
+    will-change:
+
+    transform;
+
+
+}
+
+
+
+/* ===============================
+   PREMIUM FADE REVEAL
+================================ */
+
+
+.fade-section,
+section,
+.container,
+.dashboard-container{
+
+
+    animation:
+
+    smoothReveal .8s ease both;
+
+
+}
+
+
+
+@keyframes smoothReveal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(25px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   SOFT FLOAT EFFECT
+================================ */
+
+
+.floating-element{
+
+
+    animation:
+
+    softFloat 6s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes softFloat{
+
+
+    0%,
+    100%{
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-10px);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   GLOW PULSE
+================================ */
+
+
+.glow-element{
+
+
+    animation:
+
+    glowPulse 4s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes glowPulse{
+
+
+    0%,
+    100%{
+
+
+        filter:
+
+        brightness(1);
+
+
+    }
+
+
+
+    50%{
+
+
+        filter:
+
+        brightness(1.25);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   REDUCE MOTION SUPPORT
+================================ */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+    *,
+    *::before,
+    *::after{
+
+
+        animation-duration:
+
+        0.01ms !important;
+
+
+
+        animation-iteration-count:
+
+        1 !important;
+
+
+
+        scroll-behavior:auto !important;
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   MOBILE PERFORMANCE MODE
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+    body::before,
+    body::after{
+
+
+        animation:
+
+        none;
+
+
+    }
+
+
+
+
+    .floating-element,
+    .glow-element{
+
+
+        animation:none;
+
+
+    }
+
+
+
+
+    .visual-card:hover,
+    .feature-card:hover,
+    .student-form:hover,
+    .result-card:hover{
+
+
+        transform:
+
+        translateY(-5px);
+
+
+    }
+
+
+
+}
+/* =====================================================
+   PHASE 17.2A
+   Premium Landing Page SaaS Polish
+===================================================== */
+
+
+/* ===============================
+   HERO PREMIUM CONTAINER
+================================ */
+
+
+.hero{
+
+
+    position:relative;
+
+
+    min-height:90vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.hero h1{
+
+
+    font-size:
+
+    clamp(2.8rem,6vw,5rem);
+
+
+
+    line-height:
+
+    1.1;
+
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+.hero p{
+
+
+    max-width:650px;
+
+
+    color:
+
+    rgba(255,255,255,.75);
+
+
+
+    font-size:
+
+    1.15rem;
+
+
+
+    line-height:
+
+    1.8;
+
+
+}
+
+
+
+
+
+/* ===============================
+   AI PRODUCT BADGE
+================================ */
+
+
+.ai-badge,
+.product-badge,
+.hero-badge{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+
+    padding:
+
+    10px 20px;
+
+
+
+    border-radius:
+
+    50px;
+
+
+
+    background:
+
+
+    rgba(139,92,246,.15);
+
+
+
+    border:
+
+
+    1px solid rgba(139,92,246,.35);
+
+
+
+    color:
+
+    #c4b5fd;
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+}
+
+
+
+
+
+.ai-badge::before,
+.product-badge::before,
+.hero-badge::before{
+
+
+    content:"";
+
+
+    width:9px;
+
+
+    height:9px;
+
+
+
+    border-radius:50%;
+
+
+
+    background:
+
+    #22c55e;
+
+
+
+    box-shadow:
+
+    0 0 15px #22c55e;
+
+
+}
+
+
+
+
+
+/* ===============================
+   PREMIUM SECTION SPACING
+================================ */
+
+
+section{
+
+
+    padding-top:
+
+    90px;
+
+
+    padding-bottom:
+
+    90px;
+
+
+}
+
+
+
+
+
+.section-heading{
+
+
+    max-width:
+
+    750px;
+
+
+    margin:
+
+    0 auto 50px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.section-heading h2{
+
+
+    font-size:
+
+    clamp(2rem,4vw,3.2rem);
+
+
+    font-weight:
+
+    800;
+
+
+}
+
+
+
+
+
+.section-heading p{
+
+
+    color:
+
+    rgba(255,255,255,.7);
+
+
+    line-height:
+
+    1.8;
+
+
+}
+
+
+
+
+
+/* ===============================
+   AI FEATURE HIGHLIGHT
+================================ */
+
+
+.highlight-card{
+
+
+    padding:
+
+    35px;
+
+
+    border-radius:
+
+    30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+    145deg,
+
+    rgba(139,92,246,.18),
+
+    rgba(6,182,212,.12)
+
+    );
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+}
+
+
+
+.highlight-card:hover{
+
+
+    transform:
+
+    translateY(-8px);
+
+
+
+    box-shadow:
+
+
+    0 25px 60px
+
+    rgba(139,92,246,.25);
+
+
+}
+/* =====================================================
+   PHASE 17.2B
+   Professional AI Dashboard Finish
+===================================================== */
+
+
+/* ===============================
+   DASHBOARD HEADER
+================================ */
+
+
+.dashboard-header,
+.student-header{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    gap:25px;
+
+
+
+    padding:35px;
+
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(139,92,246,.20),
+
+        rgba(6,182,212,.12)
+
+    );
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+}
+
+
+
+
+/* ===============================
+   AI ONLINE STATUS
+================================ */
+
+
+.ai-status,
+.status-indicator{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+
+    padding:
+
+    8px 16px;
+
+
+
+    border-radius:
+
+    50px;
+
+
+
+    background:
+
+    rgba(34,197,94,.12);
+
+
+
+    border:
+
+    1px solid rgba(34,197,94,.35);
+
+
+
+    color:
+
+    #86efac;
+
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+.ai-status::before,
+.status-indicator::before{
+
+
+    content:"";
+
+
+    width:10px;
+
+
+    height:10px;
+
+
+
+    border-radius:50%;
+
+
+
+    background:
+
+    #22c55e;
+
+
+
+    box-shadow:
+
+
+    0 0 18px #22c55e;
+
+
+
+    animation:
+
+    statusPulse 2s infinite;
+
+
+}
+
+
+
+
+
+@keyframes statusPulse{
+
+
+    50%{
+
+
+        opacity:.4;
+
+
+    }
+
+}
+
+
+
+
+
+/* ===============================
+   DASHBOARD METRICS
+================================ */
+
+
+.metric-card,
+.stat-card{
+
+
+    padding:
+
+    28px;
+
+
+
+    border-radius:
+
+    24px;
+
+
+
+    background:
+
+
+    rgba(255,255,255,.07);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+    transition:
+
+    .35s;
+
+
+}
+
+
+
+
+
+.metric-card:hover,
+.stat-card:hover{
+
+
+    transform:
+
+    translateY(-8px);
+
+
+
+    border-color:
+
+    rgba(56,189,248,.45);
+
+
+
+    box-shadow:
+
+
+    0 20px 50px
+
+    rgba(56,189,248,.18);
+
+
+}
+
+
+
+
+
+.metric-number,
+.stat-number{
+
+
+    font-size:
+
+    2.5rem;
+
+
+
+    font-weight:
+
+    900;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #38bdf8,
+
+        #a855f7
+
+    );
+
+
+
+    -webkit-background-clip:text;
+
+     background-clip:text;
+
+
+
+    -webkit-text-fill-color:
+
+    transparent;
+
+
+}
+
+
+
+
+
+/* ===============================
+   CAREER PREDICTION HIGHLIGHT
+================================ */
+
+
+.career-highlight,
+.prediction-card{
+
+
+    padding:
+
+    32px;
+
+
+
+    border-radius:
+
+    28px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(139,92,246,.20),
+
+        rgba(6,182,212,.15)
+
+    );
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+
+
+    position:
+
+    relative;
+
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.career-highlight::after,
+.prediction-card::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:
+
+    200px;
+
+
+    height:
+
+    200px;
+
+
+    right:
+
+    -70px;
+
+
+    top:
+
+    -70px;
+
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle,
+
+        rgba(56,189,248,.35),
+
+        transparent 70%
+
+    );
+
+
+}
+
+
+
+
+
+/* ===============================
+   ACTIVITY TIMELINE
+================================ */
+
+
+.activity-item{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+
+    padding:
+
+    18px;
+
+
+
+    border-radius:
+
+    18px;
+
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+}
+
+
+
+
+
+.activity-dot{
+
+
+    width:
+
+    12px;
+
+
+    height:
+
+    12px;
+
+
+
+    border-radius:
+
+    50%;
+
+
+
+    background:
+
+    #22c55e;
+
+
+
+    box-shadow:
+
+
+    0 0 15px #22c55e;
+
+
+}
+/* =====================================================
+   PHASE 17.2C
+   AI Loading + Error + Success UI System
+===================================================== */
+
+
+/* ===============================
+   AI LOADING CARD
+================================ */
+
+
+.ai-loading,
+.loading-card{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    gap:20px;
+
+
+
+    padding:
+
+    40px;
+
+
+
+    border-radius:
+
+    28px;
+
+
+
+    background:
+
+
+    rgba(255,255,255,.07);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+
+}
+
+
+
+/* ===============================
+   AI LOADER CIRCLE
+================================ */
+
+
+.ai-loader,
+.loader{
+
+
+    width:
+
+    70px;
+
+
+
+    height:
+
+    70px;
+
+
+
+    border-radius:
+
+    50%;
+
+
+
+    border:
+
+    5px solid rgba(255,255,255,.15);
+
+
+
+    border-top-color:
+
+    #38bdf8;
+
+
+
+    animation:
+
+
+    rotateLoader 1s linear infinite;
+
+
+}
+
+
+
+
+@keyframes rotateLoader{
+
+
+    from{
+
+
+        transform:
+
+        rotate(0deg);
+
+
+    }
+
+
+
+    to{
+
+
+        transform:
+
+        rotate(360deg);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   AI THINKING DOTS
+================================ */
+
+
+.thinking-dots span{
+
+
+    display:inline-block;
+
+
+    width:
+
+    8px;
+
+
+    height:
+
+    8px;
+
+
+
+    margin:
+
+    0 5px;
+
+
+
+    border-radius:
+
+    50%;
+
+
+
+    background:
+
+    #38bdf8;
+
+
+
+    animation:
+
+    thinking 1.4s infinite;
+
+
+}
+
+
+
+.thinking-dots span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+
+.thinking-dots span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+
+
+@keyframes thinking{
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-8px);
+
+
+        opacity:.5;
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   SUCCESS MESSAGE
+================================ */
+
+
+.success-card,
+.success-message{
+
+
+    padding:
+
+    22px;
+
+
+
+    border-radius:
+
+    20px;
+
+
+
+    background:
+
+
+    rgba(34,197,94,.12);
+
+
+
+    border:
+
+    1px solid rgba(34,197,94,.35);
+
+
+
+    color:
+
+    #86efac;
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+}
+
+
+
+
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+
+
+.error-card,
+.error-message{
+
+
+    padding:
+
+    22px;
+
+
+
+    border-radius:
+
+    20px;
+
+
+
+    background:
+
+
+    rgba(239,68,68,.12);
+
+
+
+    border:
+
+    1px solid rgba(239,68,68,.35);
+
+
+
+    color:
+
+    #fca5a5;
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+}
+
+
+
+
+
+/* ===============================
+   EMPTY STATE
+================================ */
+
+
+.empty-state{
+
+
+    text-align:center;
+
+
+
+    padding:
+
+    50px 30px;
+
+
+
+    border-radius:
+
+    28px;
+
+
+
+    background:
+
+
+    rgba(255,255,255,.05);
+
+
+
+    border:
+
+    1px dashed rgba(255,255,255,.25);
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+}
+
+
+
+
+.empty-state h3{
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #38bdf8,
+
+        #a855f7
+
+    );
+
+
+
+    -webkit-background-clip:
+
+    text;
+
+
+
+    background-clip:
+
+    text;
+
+
+
+    -webkit-text-fill-color:
+
+    transparent;
+
+
+}
+
+
+
+
+/* ===============================
+   NOTIFICATION POPUP
+================================ */
+
+
+.notification{
+
+
+    position:
+
+    relative;
+
+
+
+    padding:
+
+    18px 22px;
+
+
+
+    border-radius:
+
+    18px;
+
+
+
+    background:
+
+
+    rgba(255,255,255,.08);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    animation:
+
+
+    notificationFloat 4s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes notificationFloat{
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-6px);
+
+
+    }
+
+
+}
+ /* =====================================================
+   PHASE 17.2D
+   Final Responsive & Production Optimization
+===================================================== */
+
+
+/* ===============================
+   GLOBAL PERFORMANCE
+================================ */
+
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+
+
+@media(max-width:1024px){
+
+
+    .hero,
+    section{
+
+        padding-left:40px;
+        padding-right:40px;
+
+    }
+
+
+
+    .dashboard-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+
+    .metric-card,
+    .stat-card{
+
+        padding:22px;
+
+    }
+
+
+
+    h1{
+
+        font-size:clamp(2.5rem,6vw,4rem);
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+
+
+    /* Navbar */
+
+
+    .navbar,
+    nav{
+
+        padding:
+
+        15px 20px;
+
+    }
+
+
+
+    .navbar a{
+
+        font-size:14px;
+
+    }
+
+
+
+
+
+    /* Hero */
+
+
+    .hero{
+
+        text-align:center;
+
+        padding:
+
+        70px 20px;
+
+    }
+
+
+
+    .hero h1,
+    h1{
+
+        font-size:
+
+        clamp(2rem,9vw,3rem);
+
+        line-height:1.2;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+
+
+
+
+    /* Buttons */
+
+
+    button,
+    .btn,
+    .primary-btn{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+
+
+
+
+    /* Dashboard */
+
+
+    .dashboard-grid{
+
+        grid-template-columns:
+
+        1fr;
+
+        gap:18px;
+
+    }
+
+
+
+
+
+    .dashboard-header,
+    .student-header{
+
+
+        flex-direction:
+
+        column;
+
+
+        text-align:center;
+
+
+        padding:25px;
+
+
+    }
+
+
+
+
+
+    /* Cards */
+
+
+    .card,
+    .feature-card,
+    .visual-card,
+    .result-card,
+    .student-form{
+
+
+        width:100%;
+
+
+        transform:none;
+
+
+        animation:none;
+
+
+    }
+
+
+
+    .card:hover,
+    .feature-card:hover,
+    .visual-card:hover{
+
+
+        transform:
+
+        translateY(-5px);
+
+    }
+
+
+
+
+
+
+    /* Forms */
+
+
+    input,
+    select,
+    textarea{
+
+
+        width:100%;
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+
+
+    /* AI Circle */
+
+
+    .confidence-circle{
+
+
+        width:130px;
+
+        height:130px;
+
+
+    }
+
+
+
+    .confidence-value{
+
+
+        font-size:32px;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+
+@media(max-width:480px){
+
+
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+
+
+    h2{
+
+        font-size:1.5rem;
+
+    }
+
+
+
+    p{
+
+        font-size:14px;
+
+    }
+
+
+
+    .metric-number,
+    .stat-number{
+
+        font-size:2rem;
+
+    }
+
+
+
+    .ai-panel,
+    .assistant-card{
+
+
+        padding:20px;
+
+    }
+
+
+
+    .profile-avatar{
+
+        width:60px;
+
+        height:60px;
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   REDUCE MOTION SUPPORT
+================================ */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+    *,
+    *::before,
+    *::after{
+
+
+        animation-duration:
+
+        0.01ms !important;
+
+
+        animation-iteration-count:
+
+        1 !important;
+
+
+        scroll-behavior:auto;
+
+
+        transition-duration:
+
+        0.01ms !important;
+
+
+    }
+
+
+}
+/* =====================================================
+   PHASE 18
+   EduPath AI Premium Final Branding
+===================================================== */
+
+
+/* ===============================
+   BRAND LOGO ENHANCEMENT
+================================ */
+
+
+.logo,
+.brand-logo{
+
+
+    font-weight:900;
+
+
+    letter-spacing:.5px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #38bdf8,
+
+        #8b5cf6,
+
+        #ec4899,
+
+        #38bdf8
+
+    );
+
+
+
+    background-size:300%;
+
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+
+    -webkit-text-fill-color:transparent;
+
+
+
+    animation:
+
+    logoFlow 6s linear infinite;
+
+
+}
+
+
+
+@keyframes logoFlow{
+
+
+    from{
+
+        background-position:
+
+        0%;
+
+    }
+
+
+    to{
+
+        background-position:
+
+        300%;
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   HERO AI BADGE
+================================ */
+
+
+.hero-badge,
+.ai-badge,
+.product-badge{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+
+    padding:
+
+    10px 20px;
+
+
+
+    border-radius:
+
+    50px;
+
+
+
+    background:
+
+
+    rgba(56,189,248,.12);
+
+
+
+    border:
+
+
+    1px solid rgba(56,189,248,.35);
+
+
+
+    color:
+
+    #7dd3fc;
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px
+
+    rgba(56,189,248,.15);
+
+
+}
+
+
+
+
+
+.hero-badge::before,
+.ai-badge::before,
+.product-badge::before{
+
+
+    content:"";
+
+
+    width:9px;
+
+
+    height:9px;
+
+
+    border-radius:50%;
+
+
+
+    background:
+
+    #22c55e;
+
+
+
+    box-shadow:
+
+
+    0 0 15px
+
+    #22c55e;
+
+
+
+    animation:
+
+    badgePulse 2s infinite;
+
+
+}
+
+
+
+
+
+@keyframes badgePulse{
+
+
+    50%{
+
+        transform:
+
+        scale(1.4);
+
+
+        opacity:.5;
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   FUTURE AI GRID EFFECT
+================================ */
+
+
+.ai-background,
+.hero{
+
+
+    position:relative;
+
+
+    isolation:isolate;
+
+
+}
+
+
+
+.ai-background::before,
+.hero::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+
+    background-image:
+
+
+    linear-gradient(
+
+        rgba(255,255,255,.03) 1px,
+
+        transparent 1px
+
+    ),
+
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.03) 1px,
+
+        transparent 1px
+
+    );
+
+
+
+    background-size:
+
+    70px 70px;
+
+
+
+    mask-image:
+
+    linear-gradient(
+
+        black,
+
+        transparent
+
+    );
+
+
+    -webkit-mask-image:
+
+    linear-gradient(
+
+        black,
+
+        transparent
+
+    );
+
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+
+
+/* ===============================
+   PREMIUM CTA BUTTON
+================================ */
+
+
+.cta-button,
+.primary-button,
+.submit-button{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #8b5cf6,
+
+        #06b6d4
+
+    );
+
+
+
+    color:white;
+
+
+
+    border:none;
+
+
+
+    box-shadow:
+
+
+    0 15px 40px
+
+    rgba(139,92,246,.35);
+
+
+
+    transition:
+
+    .35s;
+
+
+}
+
+
+
+
+
+.cta-button:hover,
+.primary-button:hover,
+.submit-button:hover{
+
+
+    transform:
+
+
+    translateY(-6px)
+    scale(1.03);
+
+
+
+    box-shadow:
+
+
+    0 25px 60px
+
+    rgba(56,189,248,.35);
+
+
+}
+
+
+
+
+
+.cta-button::after,
+.primary-button::after,
+.submit-button::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+
+    width:80%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.4),
+
+        transparent
+
+    );
+
+
+
+    transition:.6s;
+
+
+}
+
+
+
+
+
+.cta-button:hover::after,
+.primary-button:hover::after,
+.submit-button:hover::after{
+
+
+    left:120%;
+
+
+}
+
+
+
+
+
+/* ===============================
+   SECTION DIVIDER
+================================ */
+
+
+.section-divider{
+
+
+    width:100%;
+
+
+    height:1px;
+
+
+
+    margin:
+
+    70px 0;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(56,189,248,.5),
+
+        transparent
+
+    );
+
+
+}
+/* =====================================================
+   PHASE 20
+   OpenAI + Linear Style Micro Animations
+===================================================== */
+
+
+/* ===============================
+   GLOBAL MICRO TRANSITION
+================================ */
+
+
+a,
+button,
+.card,
+.feature-card,
+.visual-card,
+.result-card,
+.student-form{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+}
+
+
+
+
+/* ===============================
+   PREMIUM CARD MICRO LIFT
+================================ */
+
+
+.card:hover,
+.feature-card:hover,
+.visual-card:hover,
+.result-card:hover,
+.student-form:hover{
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    box-shadow:
+
+    0 25px 60px
+
+    rgba(0,0,0,.35),
+
+    0 0 30px
+
+    rgba(56,189,248,.15);
+
+
+}
+
+
+
+
+
+/* ===============================
+   BUTTON MAGNET EFFECT
+================================ */
+
+
+button,
+.btn,
+.primary-button,
+.submit-button{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+button:hover,
+.btn:hover,
+.primary-button:hover,
+.submit-button:hover{
+
+
+    transform:
+
+    translateY(-4px)
+    scale(1.03);
+
+
+}
+
+
+
+
+
+/* ===============================
+   AI FLOATING PARTICLES
+================================ */
+
+
+.hero::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:8px;
+
+
+    height:8px;
+
+
+    border-radius:50%;
+
+
+    background:#38bdf8;
+
+
+    box-shadow:
+
+    120px 80px #8b5cf6,
+    -150px 160px #06b6d4,
+    220px 250px #ec4899,
+    -200px 300px #38bdf8;
+
+
+
+    animation:
+
+    particleFloat 12s linear infinite;
+
+
+
+    opacity:.7;
+
+
+}
+
+
+
+
+
+@keyframes particleFloat{
+
+
+    0%{
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+    50%{
+
+
+        transform:
+
+        translateY(-40px);
+
+
+    }
+
+
+    100%{
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   TEXT REVEAL EFFECT
+================================ */
+
+
+.section-heading h2,
+.hero h1{
+
+
+    animation:
+
+    textReveal .9s ease forwards;
+
+
+}
+
+
+
+@keyframes textReveal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(20px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   PREMIUM GLOW BORDER
+================================ */
+
+
+.feature-card:hover,
+.visual-card:hover,
+.result-card:hover{
+
+
+    border-color:
+
+    rgba(56,189,248,.45);
+
+
+}
+
+
+
+
+
+/* ===============================
+   PAGE ENTER ANIMATION
+================================ */
+
+
+main,
+.container{
+
+
+    animation:
+
+    pageEnter .8s ease;
+
+
+}
+
+
+
+@keyframes pageEnter{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(15px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}

@@ -1,0 +1,57 @@
+skill_id,skill_name,category,level,prerequisites,related_careers,estimated_hours
+S001,C Programming,Programming,Beginner,None,Embedded Engineer;Software Developer;IoT Engineer,30
+S002,Python Programming,Programming,Beginner,None,AI Engineer;Data Analyst;Software Developer,25
+S003,Digital Electronics,Electronics,Beginner,None,Embedded Engineer;VLSI Design Engineer;Robotics Engineer,20
+S004,Embedded C,Programming,Intermediate,C Programming,Embedded Engineer;IoT Engineer,25
+S005,Microcontrollers,Electronics,Intermediate,C Programming;Digital Electronics,Embedded Engineer;IoT Engineer;Robotics Engineer,20
+S006,ESP32 Development,Embedded Systems,Intermediate,C Programming;Microcontrollers,Embedded Engineer;IoT Engineer,15
+S007,STM32 Development,Embedded Systems,Intermediate,Embedded C;Microcontrollers,Embedded Engineer,25
+S008,RTOS,Embedded Systems,Advanced,Embedded C;Microcontrollers,Embedded Engineer,20
+S009,Embedded Linux,Embedded Systems,Advanced,C Programming;Linux Basics,Embedded Engineer,30
+S010,HTML,Web Development,Beginner,None,Web Developer,10
+S011,CSS,Web Development,Beginner,HTML,Web Developer,15
+S012,JavaScript,Web Development,Beginner,HTML,Web Developer;Software Developer,25
+S013,Git,Development Tools,Beginner,None,Web Developer;Software Developer;AI Engineer,8
+S014,Flask,Web Development,Intermediate,Python Programming;HTML;CSS;JavaScript,Web Developer;Software Developer,15
+S015,SQL,Database,Beginner,None,Data Analyst;Web Developer;Software Developer,20
+S016,Statistics,Mathematics,Beginner,None,AI Engineer;Data Analyst,20
+S017,NumPy,Data Science,Beginner,Python Programming,AI Engineer;Data Analyst,10
+S018,Pandas,Data Science,Beginner,Python Programming;NumPy,AI Engineer;Data Analyst,15
+S019,Scikit-learn,Machine Learning,Intermediate,Python Programming;Statistics;NumPy;Pandas,AI Engineer,20
+S020,Machine Learning,Machine Learning,Intermediate,Python Programming;Statistics;Scikit-learn,AI Engineer,30
+S021,Deep Learning,Machine Learning,Advanced,Machine Learning;Linear Algebra,AI Engineer,40
+S022,Verilog,Digital Design,Intermediate,Digital Electronics,VLSI Design Engineer,25
+S023,SystemVerilog,Digital Design,Advanced,Verilog,VLSI Design Engineer,25
+S024,CMOS Design,VLSI,Intermediate,Digital Electronics,VLSI Design Engineer,25
+S025,Data Structures,Computer Science,Intermediate,C Programming;Python Programming,Software Developer,30
+S026,Algorithms,Computer Science,Intermediate,Data Structures,Software Developer,25
+S027,Object-Oriented Programming,Programming,Intermediate,C Programming;Python Programming,Software Developer,20
+S028,Excel,Data Analysis,Beginner,None,Data Analyst,10
+S029,Data Visualization,Data Analysis,Intermediate,Excel;Statistics,Data Analyst,15
+S030,Power BI,Data Analysis,Intermediate,Data Visualization,Data Analyst,15
+S031,Sensors,Electronics,Beginner,None,Embedded Engineer;IoT Engineer;Robotics Engineer,15
+S032,Communication Protocols,Embedded Systems,Intermediate,Digital Electronics;Microcontrollers,Embedded Engineer;IoT Engineer,20
+S033,MQTT,IoT,Intermediate,Python Programming;Communication Protocols,IoT Engineer,10
+S034,Control Systems,Electronics,Intermediate,Mathematics,Robotics Engineer,25
+S035,ROS,Robotics,Advanced,Python Programming;Linux Basics,Robotics Engineer,30
+S036,Computer Vision,Artificial Intelligence,Intermediate,Python Programming;NumPy,AI Engineer;Robotics Engineer,30
+S037,Problem Solving,Core Skills,Beginner,None,Software Developer;AI Engineer,15
+S038,Linear Algebra,Mathematics,Beginner,None,AI Engineer,20
+S039,Linux Basics,Operating Systems,Beginner,None,Embedded Engineer;Robotics Engineer,15
+S040,REST APIs,Web Development,Intermediate,HTTP Basics;Python Programming,Web Developer;Software Developer,15
+S041,Mathematics,Mathematics,Beginner,,AI Engineer;Data Scientist;DSP Engineer;Communication Systems Engineer,30
+S042,Boolean Algebra,Digital Electronics,Beginner,Digital Electronics,Digital Design Engineer;FPGA Design Engineer;VLSI Design Engineer,15
+S043,Analog Electronics,Electronics,Beginner,Digital Electronics,Analog Design Engineer;PCB Design Engineer,25
+S044,Circuit Analysis,Electronics,Beginner,Mathematics,Analog Design Engineer;PCB Design Engineer,25
+S045,Signals and Systems,ECE,Intermediate,Mathematics,DSP Engineer;Communication Systems Engineer,35
+S046,Digital Signal Processing,ECE,Intermediate,Signals and Systems,DSP Engineer,40
+S047,Communication Systems,ECE,Intermediate,Mathematics;Signals and Systems,Communication Systems Engineer,35
+S048,Computer Networks,Networking,Beginner,Linux Basics,Computer Networks Engineer;Cybersecurity Analyst;Cloud Engineer,30
+S049,Database Management,Database,Beginner,SQL,Database Administrator;Backend Developer,25
+S050,MATLAB,Programming,Beginner,Mathematics,DSP Engineer;Communication Systems Engineer,25
+S051,FPGA,Digital Design,Intermediate,Digital Electronics;Verilog,FPGA Design Engineer;Digital Design Engineer,35
+S052,ASIC Design,VLSI,Advanced,Digital Electronics;CMOS Design,ASIC Verification Engineer;VLSI Design Engineer,50
+S053,Static Timing Analysis,VLSI,Advanced,Digital Electronics;ASIC Design,ASIC Verification Engineer;VLSI Design Engineer,35
+S054,Computer Architecture,Computer Engineering,Intermediate,Digital Electronics,Digital Design Engineer;FPGA Design Engineer,30
+S055,PCB Design,Electronics,Intermediate,Circuit Analysis;Digital Electronics,PCB Design Engineer,30
+S056,CMOS,VLSI,Intermediate,Digital Electronics,Analog Design Engineer;VLSI Design Engineer,30

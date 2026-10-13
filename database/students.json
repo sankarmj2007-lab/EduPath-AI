@@ -1,0 +1,28 @@
+[
+  {
+    "student_id": "ST001",
+    "name": "Sample Student",
+    "education_stage": "College",
+    "degree": "B.E.",
+    "department": "ECE",
+    "study_year": 2,
+    "current_skills": [
+      {
+        "skill": "C Programming",
+        "level": "Beginner"
+      },
+      {
+        "skill": "Digital Electronics",
+        "level": "Beginner"
+      }
+    ],
+    "interests": [
+      "Embedded Systems",
+      "IoT",
+      "Electronics"
+    ],
+    "career_goal": "Embedded Engineer",
+    "weekly_learning_hours": 7,
+    "learning_style": "Hands-on Projects"
+  }
+]

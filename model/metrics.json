@@ -1,0 +1,75 @@
+{
+  "rows": 3000,
+  "careers": 30,
+  "train_rows": 2400,
+  "test_rows": 600,
+  "top1_accuracy": 0.4367,
+  "top3_accuracy": 0.8067,
+  "top5_accuracy": 0.9217,
+  "macro_f1": 0.4447,
+  "cv_5fold_top1_mean": 0.413,
+  "cv_5fold_top1_std": 0.0222,
+  "top_features": [
+    {
+      "feature": "pref_hardware_vs_software",
+      "importance": 0.0401
+    },
+    {
+      "feature": "assessment_electronics",
+      "importance": 0.0391
+    },
+    {
+      "feature": "assessment_programming",
+      "importance": 0.0357
+    },
+    {
+      "feature": "assessment_math",
+      "importance": 0.0355
+    },
+    {
+      "feature": "cgpa",
+      "importance": 0.0303
+    },
+    {
+      "feature": "assessment_logical",
+      "importance": 0.0296
+    },
+    {
+      "feature": "weekly_study_hours",
+      "importance": 0.024
+    },
+    {
+      "feature": "projects_count",
+      "importance": 0.0164
+    },
+    {
+      "feature": "interest_vlsi_digital_design",
+      "importance": 0.0158
+    },
+    {
+      "feature": "interest_artificial_intelligence",
+      "importance": 0.0154
+    },
+    {
+      "feature": "interest_web_development",
+      "importance": 0.0151
+    },
+    {
+      "feature": "interest_data_analytics",
+      "importance": 0.0142
+    },
+    {
+      "feature": "interest_mobile_apps",
+      "importance": 0.0141
+    },
+    {
+      "feature": "interest_game_development",
+      "importance": 0.0135
+    },
+    {
+      "feature": "interest_analog_pcb_design",
+      "importance": 0.0133
+    }
+  ],
+  "data_note": "Trained on synthetic data. Validate on real student responses."
+}

@@ -1,0 +1,161 @@
+/* =====================================================
+   EDUPATH AI - PRINT / PDF STYLES
+   Loaded LAST and ONLY when printing (media="print").
+   The website look on screen is not changed.
+===================================================== */
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+@media print {
+
+    /* keep colours and backgrounds in the PDF */
+    html, body, body * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    html body {
+        background: #ffffff !important;
+    }
+
+    /* navbar: show once at the top, do not stick */
+    html body .navbar {
+        position: static !important;
+    }
+
+    /* things that do nothing on paper */
+    html body #download-pdf-button,
+    html body #analyze-button,
+    html body #form-message,
+    html body details > summary {
+        display: none !important;
+    }
+
+    /* every big part of the website starts on a new page */
+    html body #features,
+    html body #about,
+    html body #get-started,
+    html body #results {
+        break-before: page;
+        page-break-before: always;
+    }
+
+    /* tighter spacing, so pages are not mostly empty */
+    html body .hero {
+        min-height: 0 !important;
+        padding: 24px 0 32px !important;
+    }
+
+    html body .section,
+    html body .features-section,
+    html body .about-section,
+    html body .form-section {
+        padding: 28px 0 !important;
+        min-height: 0 !important;
+    }
+
+    html body .footer {
+        padding: 8px 0 !important;
+        margin-top: 0 !important;
+    }
+
+    html body .footer p {
+        margin: 0 !important;
+    }
+
+    /* hero stays in two columns so it fits on the first page */
+    html body .hero-grid {
+        display: grid !important;
+        grid-template-columns: 1.1fr 0.9fr !important;
+        gap: 16px !important;
+        align-items: center !important;
+    }
+
+    html body .hero h1 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    html body .hero-description {
+        font-size: 14px !important;
+    }
+
+    /* all 6 feature cards on one page */
+    html body .features-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    html body .form-card {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* decorative glow layers look like big colour blocks on paper */
+    html body .result-panel::before,
+    html body .result-panel::after,
+    html body .result-stat::before,
+    html body .result-stat::after,
+    html body .week-card::before,
+    html body .week-card::after,
+    html body .feature-card::before,
+    html body .feature-card::after,
+    html body .student-form::before,
+    html body .student-form::after {
+        display: none !important;
+        content: none !important;
+    }
+
+    /* flat, high-contrast cards (no glass, gradients or shadows) */
+    html body .result-panel,
+    html body .result-stat,
+    html body .week-card,
+    html body .resource-item,
+    html body .student-form {
+        background: #ffffff !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: 1px solid #d9e0ec !important;
+    }
+
+    html body .result-panel li {
+        background: #ffffff !important;
+        background-image: none !important;
+        border: 1px solid #e3e8ef !important;
+    }
+
+    html body .result-panel li,
+    html body .result-panel p,
+    html body .result-panel strong,
+    html body .result-panel h3,
+    html body .result-panel h4 {
+        color: #0e1726 !important;
+    }
+
+    /* do not cut cards, lists and rows in the middle */
+    .result-stat,
+    .result-list > li,
+    .resource-item,
+    .week-card,
+    .roadmap-step,
+    .feature-card,
+    h2, h3, h4 {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h2, h3, h4 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* links look like normal text on paper */
+    a {
+        text-decoration: none !important;
+    }
+}

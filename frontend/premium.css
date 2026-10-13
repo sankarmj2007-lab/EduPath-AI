@@ -1,0 +1,4829 @@
+/* ===================================================
+   EDUPATH AI PREMIUM UI
+   PHASE 1
+===================================================*/
+
+/* Animated Background */
+
+body{
+    position:relative;
+    background:
+        radial-gradient(circle at top left,#6d5dfc22,transparent 40%),
+        radial-gradient(circle at bottom right,#00ffd533,transparent 45%),
+        linear-gradient(135deg,#050816,#090f1f,#050816);
+    background-size:300% 300%;
+    animation:bgMove 15s ease infinite;
+}
+
+/* Aurora */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+    radial-gradient(circle,#7c6cff30 0%,transparent 60%),
+    radial-gradient(circle,#00ffe133 0%,transparent 65%);
+    filter:blur(120px);
+    animation:aurora 12s ease-in-out infinite alternate;
+    z-index:-2;
+}
+
+/* Floating Glow */
+
+body::after{
+    content:"";
+    position:fixed;
+    width:900px;
+    height:900px;
+    left:-250px;
+    top:-250px;
+    border-radius:50%;
+    background:#7c6cff20;
+    filter:blur(150px);
+    animation:floatGlow 18s linear infinite;
+    z-index:-3;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+@keyframes aurora{
+
+0%{
+transform:translate(-10%,0%) scale(1);
+}
+
+50%{
+transform:translate(15%,10%) scale(1.15);
+}
+
+100%{
+transform:translate(0%,15%) scale(1.05);
+}
+
+}
+
+@keyframes floatGlow{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+/* ===================================================
+   EDUPATH AI PREMIUM UI
+   PHASE 1
+===================================================*/
+
+/* Animated Background */
+
+body{
+    position:relative;
+    background:
+        radial-gradient(circle at top left,#6d5dfc22,transparent 40%),
+        radial-gradient(circle at bottom right,#00ffd533,transparent 45%),
+        linear-gradient(135deg,#050816,#090f1f,#050816);
+    background-size:300% 300%;
+    animation:bgMove 15s ease infinite;
+}
+
+/* Aurora */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+    radial-gradient(circle,#7c6cff30 0%,transparent 60%),
+    radial-gradient(circle,#00ffe133 0%,transparent 65%);
+    filter:blur(120px);
+    animation:aurora 12s ease-in-out infinite alternate;
+    z-index:-2;
+}
+
+/* Floating Glow */
+
+body::after{
+    content:"";
+    position:fixed;
+    width:900px;
+    height:900px;
+    left:-250px;
+    top:-250px;
+    border-radius:50%;
+    background:#7c6cff20;
+    filter:blur(150px);
+    animation:floatGlow 18s linear infinite;
+    z-index:-3;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+@keyframes aurora{
+
+0%{
+transform:translate(-10%,0%) scale(1);
+}
+
+50%{
+transform:translate(15%,10%) scale(1.15);
+}
+
+100%{
+transform:translate(0%,15%) scale(1.05);
+}
+
+}
+
+@keyframes floatGlow{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+/* ===================================================
+   PHASE 3 - PREMIUM HERO
+===================================================*/
+
+/* Hero Layout */
+.hero{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Floating Glow */
+.hero::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    right:-180px;
+    top:-120px;
+    background:radial-gradient(circle,#7c6cff33,transparent 70%);
+    filter:blur(90px);
+    animation:heroGlow 8s ease-in-out infinite alternate;
+    pointer-events:none;
+}
+
+/* Heading */
+.hero h1{
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #b9b0ff,
+        #55e6d0,
+        #ffffff
+    );
+
+    background-size:300%;
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+
+    animation:titleMove 8s linear infinite;
+
+    text-shadow:0 0 25px rgba(124,108,255,.25);
+
+}
+
+/* Description */
+
+.hero-description{
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    color:#b8c3dd;
+
+}
+
+/* Buttons */
+
+.hero-actions{
+
+    margin-top:40px;
+
+}
+
+.primary-button{
+
+    background:linear-gradient(
+        135deg,
+        #6d5dfc,
+        #9f8cff
+    );
+
+    border:none;
+
+    box-shadow:
+    0 15px 40px rgba(124,108,255,.45);
+
+}
+
+.primary-button:hover{
+
+    transform:
+    translateY(-6px)
+    scale(1.03);
+
+}
+
+.secondary-button{
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter: blur(18px);
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.10);
+
+}
+
+.secondary-button:hover{
+
+    border-color:#7c6cff;
+
+    box-shadow:
+    0 0 25px rgba(124,108,255,.25);
+
+}
+
+/* Stats */
+
+.hero-stats{
+
+    margin-top:50px;
+
+}
+
+.hero-stats div{
+
+    transition:.35s;
+
+}
+
+.hero-stats div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* Animations */
+
+@keyframes heroGlow{
+
+0%{
+
+transform:
+translateY(0px);
+
+}
+
+100%{
+
+transform:
+translateY(40px)
+scale(1.15);
+
+}
+
+}
+
+@keyframes titleMove{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+/* ===================================================
+   PHASE 4 - PREMIUM FEATURE CARDS
+===================================================*/
+
+/* Feature Section */
+.features{
+    position:relative;
+    overflow:hidden;
+}
+
+.features::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,rgba(124,108,255,.12),transparent 40%),
+    radial-gradient(circle at bottom left,rgba(85,230,208,.10),transparent 40%);
+    pointer-events:none;
+}
+
+/* Grid */
+.feature-grid{
+    position:relative;
+    z-index:2;
+}
+
+/* Premium Cards */
+.feature-card{
+
+    position:relative;
+    overflow:hidden;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border-color .45s ease;
+
+}
+
+/* Shine Effect */
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+    left:-50%;
+
+    width:70%;
+    height:300%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.15),
+        transparent
+    );
+
+    transform:rotate(25deg);
+
+    transition:1s;
+
+}
+
+/* Glow */
+
+.feature-card::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    border-radius:inherit;
+
+    border:1px solid transparent;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(124,108,255,.45),
+        rgba(85,230,208,.35)
+    ) border-box;
+
+    mask:
+linear-gradient(#fff 0 0) padding-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask:
+linear-gradient(#fff 0 0) padding-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite: xor;
+mask-composite: exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+/* Hover */
+
+.feature-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.45),
+    0 0 30px rgba(124,108,255,.25);
+
+}
+
+.feature-card:hover::before{
+
+    left:160%;
+
+}
+
+.feature-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* Icons */
+
+.feature-icon{
+
+    background:
+    linear-gradient(
+        135deg,
+        #7c6cff,
+        #55e6d0
+    );
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(124,108,255,.35);
+
+    transition:.4s;
+
+}
+
+.feature-card:hover .feature-icon{
+
+    transform:
+    rotate(10deg)
+    scale(1.12);
+
+}
+
+/* Title */
+
+.feature-card h3{
+
+    font-size:1.08rem;
+
+    margin-bottom:12px;
+
+}
+
+/* Description */
+
+.feature-card p{
+
+    color:#b7c2dd;
+
+    line-height:1.8;
+
+}
+/* ===================================================
+   PHASE 5 - PREMIUM STUDENT FORM
+===================================================*/
+
+.get-started{
+    position:relative;
+    overflow:hidden;
+}
+
+.get-started::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,rgba(124,108,255,.12),transparent 35%),
+    radial-gradient(circle at bottom left,rgba(85,230,208,.08),transparent 35%);
+    pointer-events:none;
+}
+
+.student-form{
+
+    position:relative;
+    z-index:2;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
+
+    transition:.4s;
+
+}
+
+.student-form:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
+}
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:
+    .35s border,
+    .35s box-shadow,
+    .35s background;
+
+}
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    background:rgba(255,255,255,.06);
+
+    border-color:#7c6cff;
+
+    box-shadow:
+    0 0 0 4px rgba(124,108,255,.15),
+    0 0 20px rgba(124,108,255,.20);
+
+}
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#8f9bb7;
+
+}
+
+/* Labels */
+
+.form-group label{
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+/* Submit Button */
+
+.submit-button{
+
+    background:
+    linear-gradient(
+        135deg,
+        #6d5dfc,
+        #8d70ff,
+        #55e6d0
+    );
+
+    background-size:250%;
+
+    border:none;
+
+    color:white;
+
+    font-weight:700;
+
+    transition:.4s;
+
+    box-shadow:
+    0 15px 35px rgba(124,108,255,.35);
+
+}
+
+/* Hover */
+
+.submit-button:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.02);
+
+    background-position:100%;
+
+    box-shadow:
+    0 20px 50px rgba(124,108,255,.45);
+
+}
+
+/* Active */
+
+.submit-button:active{
+
+    transform:scale(.98);
+
+}
+
+/* Form Message */
+
+.form-message{
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+.form-message.success{
+
+    color:#55e6d0;
+
+}
+
+.form-message.error{
+
+    color:#ff8e9f;
+
+}
+/* =========================================
+   PREMIUM GLASSMORPHISM CARDS
+========================================= */
+
+.visual-card,
+.feature-card,
+.student-form,
+.result-panel,
+.result-stat{
+
+    position:relative;
+    overflow:hidden;
+
+    background:rgba(20,28,48,.72);
+
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.30);
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border .45s ease;
+
+}
+
+/* Premium Border Glow */
+
+.visual-card::before,
+.feature-card::before,
+.student-form::before,
+.result-panel::before,
+.result-stat::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    padding:1px;
+
+    border-radius:inherit;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(124,108,255,.55),
+    rgba(85,230,208,.35),
+    transparent
+    );
+
+    -webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite:xor;
+mask-composite:exclude;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+/* Hover */
+
+.visual-card:hover,
+.feature-card:hover,
+.student-form:hover,
+.result-panel:hover,
+.result-stat:hover{
+
+    transform:
+    translateY(-10px);
+
+    border-color:rgba(124,108,255,.35);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45),
+    0 0 35px rgba(124,108,255,.22);
+
+}
+
+.visual-card:hover::before,
+.feature-card:hover::before,
+.student-form:hover::before,
+.result-panel:hover::before,
+.result-stat:hover::before{
+
+    opacity:1;
+
+}
+/* ==================================================
+   PHASE 7 - PREMIUM SECTION ANIMATIONS
+================================================== */
+
+/* Smooth Fade Animation */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Animation */
+
+.hero,
+.features,
+.get-started,
+.about,
+.footer {
+    animation: fadeUp 0.9s ease both;
+}
+
+/* Premium Hover */
+
+.feature-card,
+.visual-card,
+.result-panel,
+.result-stat,
+.student-form {
+    will-change: transform;
+}
+
+/* Image/Card Lift */
+
+.feature-card:hover,
+.visual-card:hover,
+.result-panel:hover,
+.result-stat:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Premium Button Animation */
+
+.primary-button,
+.secondary-button,
+.nav-button {
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background-color .3s ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.nav-button:hover {
+    transform: translateY(-4px);
+}
+
+/* Section Title */
+
+.section-heading h2 {
+    position: relative;
+}
+
+.section-heading h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 16px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7c6cff, #55e6d0);
+}
+
+/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+/* ==================================================
+   PHASE 8 - PREMIUM FEATURE ICONS
+================================================== */
+
+.feature-icon {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #7c6cff, #55e6d0);
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(124, 108, 255, 0.35);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.feature-icon::before {
+    content: "";
+
+    position: absolute;
+
+    top: -120%;
+    left: -40%;
+
+    width: 50%;
+    height: 300%;
+
+    background: rgba(255,255,255,.35);
+
+    transform: rotate(25deg);
+
+    transition: left .8s ease;
+}
+
+.feature-card:hover .feature-icon {
+
+    transform:
+        rotate(-8deg)
+        scale(1.12);
+
+    box-shadow:
+        0 18px 35px rgba(124,108,255,.45);
+
+}
+
+.feature-card:hover .feature-icon::before {
+
+    left: 130%;
+
+}
+
+/* Small Glow Pulse */
+
+@keyframes iconPulse {
+
+    0%{
+        box-shadow:0 0 0 rgba(124,108,255,0);
+    }
+
+    50%{
+        box-shadow:0 0 22px rgba(124,108,255,.35);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(124,108,255,0);
+    }
+
+}
+
+.feature-icon{
+
+    animation:iconPulse 3s infinite;
+
+}
+/* ==================================================
+   PHASE 9 - PREMIUM HERO EFFECTS
+================================================== */
+
+.hero {
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    top: -180px;
+    left: -220px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(124,108,255,0.18) 0%,
+        rgba(124,108,255,0.08) 45%,
+        transparent 75%
+    );
+
+    filter: blur(80px);
+
+    animation: heroFloatLeft 14s ease-in-out infinite alternate;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    right: -180px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(85,230,208,0.18) 0%,
+        rgba(85,230,208,0.08) 45%,
+        transparent 75%
+    );
+
+    filter: blur(80px);
+
+    animation: heroFloatRight 16s ease-in-out infinite alternate;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+@keyframes heroFloatLeft {
+
+    from {
+        transform: translate(0px,0px) scale(1);
+    }
+
+    to {
+        transform: translate(40px,30px) scale(1.12);
+    }
+
+}
+
+@keyframes heroFloatRight {
+
+    from {
+        transform: translate(0px,0px) scale(1);
+    }
+
+    to {
+        transform: translate(-35px,-25px) scale(1.1);
+    }
+
+}
+/* ==================================================
+   PHASE 10 - GLASSMORPHISM UPGRADE
+================================================== */
+
+/* Premium Cards */
+
+.visual-card,
+.feature-card,
+.student-form,
+.result-panel,
+.result-stat{
+
+    background:rgba(255,255,255,.045);
+
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.06);
+
+}
+
+/* Hover Lift */
+
+.visual-card:hover,
+.feature-card:hover,
+.student-form:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(124,108,255,.35);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        0 0 40px rgba(124,108,255,.18);
+
+}
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#7c6cff;
+
+    box-shadow:
+        0 0 25px rgba(124,108,255,.25);
+
+}
+
+/* Result Panels */
+
+.result-panel h3,
+.result-stat h3{
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #9e8bff,
+        #55e6d0
+    );
+
+   background-clip: text;
+-webkit-background-clip: text;
+
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+
+.footer{
+
+    background:rgba(10,15,25,.55);
+
+    backdrop-filter:blur(20px);
+-webkit-backdrop-filter: blur(18px);
+}
+/* =====================================================
+   PHASE 11
+   Premium Mouse Spotlight
+   Animated Grid Background
+   AI Dashboard Lighting
+===================================================== */
+
+
+/* ---------- Animated Grid Background ---------- */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    pointer-events: none;
+    z-index: -2;
+
+    animation: gridMove 25s linear infinite;
+}
+
+
+@keyframes gridMove {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(60px);
+    }
+
+}
+
+
+
+/* ---------- Global AI Light Atmosphere ---------- */
+
+
+body::after {
+
+    content:"";
+
+    position: fixed;
+
+    width: 500px;
+    height:500px;
+
+    top:20%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139,92,246,0.18),
+            transparent 65%
+        );
+
+    filter: blur(60px);
+
+    pointer-events:none;
+
+    z-index:-3;
+
+    animation: aiLightPulse 8s ease-in-out infinite;
+
+}
+
+
+
+@keyframes aiLightPulse {
+
+
+    0% {
+
+        opacity:.5;
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    }
+
+
+    50% {
+
+        opacity:.9;
+
+        transform:
+        translate(-50%,-50%)
+        scale(1.25);
+
+    }
+
+
+    100% {
+
+        opacity:.5;
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    }
+
+}
+
+
+
+
+/* ---------- Premium Mouse Spotlight ---------- */
+
+
+.main-container,
+section,
+.hero,
+.dashboard,
+.card,
+.feature-card,
+.student-form,
+.result-card {
+
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.main-container::before,
+section::before,
+.hero::before,
+.dashboard::before,
+.card::before,
+.feature-card::before,
+.student-form::before,
+.result-card::before {
+
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(56,189,248,0.22),
+        transparent 70%
+    );
+
+
+    top:var(--mouse-y,50%);
+    left:var(--mouse-x,50%);
+
+
+    transform:
+    translate(-50%,-50%);
+
+
+    opacity:0;
+
+
+    transition:
+    opacity .4s ease;
+
+
+    pointer-events:none;
+
+}
+
+
+
+.main-container:hover::before,
+section:hover::before,
+.hero:hover::before,
+.dashboard:hover::before,
+.card:hover::before,
+.feature-card:hover::before,
+.student-form:hover::before,
+.result-card:hover::before {
+
+
+    opacity:1;
+
+}
+
+
+
+/* ---------- AI Dashboard Glow Border ---------- */
+
+
+.dashboard,
+.result-card,
+.student-form {
+
+
+    border:1px solid rgba(255,255,255,0.12);
+
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,0.12),
+        rgba(255,255,255,0.04)
+    );
+
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease,
+    border-color .4s ease;
+
+}
+
+
+
+.dashboard:hover,
+.result-card:hover,
+.student-form:hover {
+
+
+    transform:
+    translateY(-8px);
+
+
+    border-color:
+    rgba(56,189,248,0.45);
+
+
+    box-shadow:
+
+    0 0 40px
+    rgba(56,189,248,0.15),
+
+    inset 0 0 25px
+    rgba(139,92,246,0.1);
+
+}
+
+
+
+/* ---------- Premium Button Light Sweep ---------- */
+
+
+button,
+.btn,
+.primary-btn {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+button::after,
+.btn::after,
+.primary-btn::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-120%;
+
+
+    width:80%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+button:hover::after,
+.btn:hover::after,
+.primary-btn:hover::after {
+
+
+    left:120%;
+
+
+}
+
+
+
+
+/* ---------- Smooth Page Reveal ---------- */
+
+
+.page,
+.container,
+section {
+
+
+    animation:
+    pageReveal .8s ease forwards;
+
+
+}
+
+
+
+@keyframes pageReveal {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+        translateY(25px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+/* =====================================================
+   PHASE 12
+   Premium AI Startup UI Upgrade
+===================================================== */
+
+
+/* ---------- Advanced 3D Card Hover ---------- */
+
+
+.card,
+.feature-card,
+.visual-card,
+.student-form,
+.result-card {
+
+
+    transform-style: preserve-3d;
+
+    perspective:1000px;
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    border-color .45s ease;
+
+}
+
+
+
+.card:hover,
+.feature-card:hover,
+.visual-card:hover,
+.student-form:hover,
+.result-card:hover {
+
+
+    transform:
+
+    translateY(-12px)
+
+    rotateX(4deg)
+
+    rotateY(-4deg);
+
+
+    box-shadow:
+
+    0 25px 60px
+    rgba(0,0,0,0.25),
+
+    0 0 40px
+    rgba(139,92,246,0.18);
+
+
+}
+
+
+
+/* ---------- Premium Gradient Border Animation ---------- */
+
+
+.feature-card,
+.visual-card,
+.result-card {
+
+
+    position:relative;
+
+    isolation:isolate;
+
+
+}
+
+
+
+.feature-card::after,
+.visual-card::after,
+.result-card::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        #8b5cf6,
+        #06b6d4,
+        #ec4899,
+        #8b5cf6
+    );
+
+
+    background-size:300% 300%;
+
+
+    border-radius:inherit;
+
+
+    z-index:-2;
+
+
+    opacity:0;
+
+
+    transition:.4s;
+
+
+    animation:
+    borderFlow 8s linear infinite;
+
+
+}
+
+
+
+.feature-card:hover::after,
+.visual-card:hover::after,
+.result-card:hover::after {
+
+
+    opacity:1;
+
+
+}
+
+
+
+@keyframes borderFlow {
+
+
+    0%{
+
+        background-position:
+        0% 50%;
+
+    }
+
+
+    50%{
+
+        background-position:
+        100% 50%;
+
+    }
+
+
+    100%{
+
+        background-position:
+        0% 50%;
+
+    }
+
+
+}
+
+
+
+
+/* ---------- Floating AI Cards ---------- */
+
+
+.visual-card,
+.feature-card {
+
+
+    animation:
+    floatingCard 6s ease-in-out infinite;
+
+
+}
+
+
+
+.visual-card:nth-child(2),
+.feature-card:nth-child(2){
+
+
+    animation-delay:1s;
+
+
+}
+
+
+
+.visual-card:nth-child(3),
+.feature-card:nth-child(3){
+
+
+    animation-delay:2s;
+
+
+}
+
+
+
+
+@keyframes floatingCard {
+
+
+    0%{
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:
+        translateY(-10px);
+
+    }
+
+
+    100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+
+/* ---------- AI Dashboard Inner Glow ---------- */
+
+
+.dashboard,
+.student-form,
+.result-card {
+
+
+    box-shadow:
+
+    inset 0 0 40px
+    rgba(255,255,255,0.04),
+
+    0 20px 50px
+    rgba(0,0,0,0.18);
+
+
+}
+
+
+
+
+/* ---------- Premium Text Shine ---------- */
+
+
+h1,
+h2,
+.gradient-text {
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #38bdf8,
+        #a855f7,
+        #ffffff
+    );
+
+
+    background-size:300%;
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+    animation:
+
+    textFlow 8s linear infinite;
+
+
+}
+
+
+
+@keyframes textFlow {
+
+
+    from{
+
+        background-position:
+        0%;
+
+    }
+
+
+    to{
+
+        background-position:
+        300%;
+
+    }
+
+}
+
+
+
+
+/* ---------- Premium Scrollbar ---------- */
+
+
+::-webkit-scrollbar {
+
+
+    width:10px;
+
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+
+    background:
+    rgba(255,255,255,0.05);
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background:
+
+    linear-gradient(
+        #8b5cf6,
+        #06b6d4
+    );
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+
+
+    background:
+
+    linear-gradient(
+        #06b6d4,
+        #ec4899
+    );
+
+
+}
+/* =====================================================
+   PHASE 13
+   Premium Mobile Responsive Design
+===================================================== */
+
+
+/* ---------- Tablet Devices ---------- */
+
+
+@media (max-width:1024px){
+
+
+    .hero,
+    section {
+
+
+        padding-left:40px;
+        padding-right:40px;
+
+
+    }
+
+
+
+    .hero h1,
+    h1 {
+
+
+        font-size:clamp(2.5rem,5vw,4rem);
+
+
+    }
+
+
+
+    .card,
+    .feature-card,
+    .visual-card {
+
+
+        width:100%;
+
+
+    }
+
+
+
+    .dashboard,
+    .student-form,
+    .result-card {
+
+
+        margin:20px auto;
+
+
+    }
+
+
+}
+
+
+
+
+/* ---------- Mobile Devices ---------- */
+
+
+@media (max-width:768px){
+
+
+
+    body {
+
+
+        overflow-x:hidden;
+
+
+    }
+
+
+
+    /* Navbar */
+
+
+    nav,
+    .navbar {
+
+
+        padding:15px 20px;
+
+
+        backdrop-filter:
+        blur(20px);
+
+
+        -webkit-backdrop-filter:
+        blur(20px);
+
+
+    }
+
+
+
+    .navbar a {
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+    /* Hero Section */
+
+
+    .hero {
+
+
+        min-height:auto;
+
+
+        padding:
+
+        80px 20px 50px;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+    .hero h1,
+    h1 {
+
+
+        font-size:
+
+        clamp(
+        2rem,
+        10vw,
+        3rem
+        );
+
+
+        line-height:1.15;
+
+
+    }
+
+
+
+    .hero p {
+
+
+        font-size:15px;
+
+
+        line-height:1.7;
+
+
+    }
+
+
+
+
+    /* Buttons */
+
+
+    .btn,
+    button,
+    .primary-btn {
+
+
+        width:100%;
+
+
+        max-width:320px;
+
+
+        margin:10px auto;
+
+
+    }
+
+
+
+
+    /* Cards */
+
+
+    .card,
+    .feature-card,
+    .visual-card,
+    .student-form,
+    .result-card {
+
+
+        width:100%;
+
+
+        margin-bottom:20px;
+
+
+        transform:none;
+
+
+        animation:none;
+
+
+    }
+
+
+
+
+    .card:hover,
+    .feature-card:hover,
+    .visual-card:hover,
+    .student-form:hover,
+    .result-card:hover {
+
+
+        transform:
+
+        translateY(-5px);
+
+
+    }
+
+
+
+
+
+    /* Forms */
+
+
+    input,
+    select,
+    textarea {
+
+
+        width:100%;
+
+
+        font-size:16px;
+
+
+        padding:14px;
+
+
+    }
+
+
+
+
+
+    /* Dashboard */
+
+
+    .dashboard {
+
+
+        padding:20px;
+
+
+    }
+
+
+
+
+
+    /* Disable heavy effects for performance */
+
+
+    body::before {
+
+
+        background-size:
+
+        40px 40px;
+
+
+    }
+
+
+
+
+    body::after {
+
+
+        width:300px;
+
+        height:300px;
+
+
+    }
+
+
+
+}
+
+
+
+
+/* ---------- Small Phones ---------- */
+
+
+@media (max-width:480px){
+
+
+
+    .hero {
+
+
+        padding-top:60px;
+
+
+    }
+
+
+
+
+    h1 {
+
+
+        font-size:2rem;
+
+
+    }
+
+
+
+    h2 {
+
+
+        font-size:1.5rem;
+
+
+    }
+
+
+
+    p {
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+    .feature-icon {
+
+
+        width:55px;
+
+        height:55px;
+
+
+    }
+
+
+
+
+    .card,
+    .feature-card {
+
+
+        padding:18px;
+
+
+    }
+
+
+
+}
+/* =====================================================
+   PHASE 14
+   Advanced AI Product UI Polish
+===================================================== */
+
+
+/* ---------- Neural Network Background Effect ---------- */
+
+
+body {
+
+    background-attachment: fixed;
+
+}
+
+
+
+.ai-glow,
+.dashboard,
+.result-card {
+
+
+    position:relative;
+
+}
+
+
+
+.ai-glow::before,
+.dashboard::before,
+.result-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+    radial-gradient(
+        circle at 20% 30%,
+        rgba(56,189,248,.18),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 80% 70%,
+        rgba(168,85,247,.18),
+        transparent 35%
+    );
+
+
+    pointer-events:none;
+
+
+    animation:
+
+    neuralPulse 10s ease-in-out infinite;
+
+
+}
+
+
+
+
+@keyframes neuralPulse {
+
+
+    0% {
+
+        opacity:.4;
+
+    }
+
+
+    50% {
+
+        opacity:.8;
+
+    }
+
+
+    100% {
+
+        opacity:.4;
+
+    }
+
+}
+
+
+
+
+/* ---------- Premium AI Status Badge ---------- */
+
+
+.status-badge,
+.badge,
+.ai-status {
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    padding:
+
+    8px 16px;
+
+
+    border-radius:50px;
+
+
+    background:
+
+    rgba(56,189,248,.12);
+
+
+    border:
+
+    1px solid rgba(56,189,248,.35);
+
+
+
+    color:#38bdf8;
+
+
+    font-size:14px;
+
+
+    backdrop-filter:blur(15px);
+
+
+    -webkit-backdrop-filter:blur(15px);
+
+
+}
+
+
+
+
+.status-badge::before,
+.badge::before,
+.ai-status::before {
+
+
+    content:"";
+
+
+    width:8px;
+
+    height:8px;
+
+
+    border-radius:50%;
+
+
+    background:#22c55e;
+
+
+    box-shadow:
+
+    0 0 15px #22c55e;
+
+
+    animation:
+
+    statusBlink 2s infinite;
+
+
+}
+
+
+
+
+@keyframes statusBlink {
+
+
+    50% {
+
+        opacity:.3;
+
+    }
+
+}
+
+
+
+
+/* ---------- AI Dashboard Metric Cards ---------- */
+
+
+.metric-card,
+.stat-card {
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.04)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+    border-radius:22px;
+
+
+    padding:25px;
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+.metric-card:hover,
+.stat-card:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    border-color:
+
+    rgba(56,189,248,.5);
+
+
+
+    box-shadow:
+
+    0 20px 50px
+
+    rgba(56,189,248,.15);
+
+
+}
+
+
+
+
+.metric-number,
+.stat-number {
+
+
+    font-size:38px;
+
+
+    font-weight:800;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #a855f7
+    );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+
+/* ---------- Glass Notification ---------- */
+
+
+.notification,
+.alert,
+.message-box {
+
+
+    padding:
+
+    18px 22px;
+
+
+    border-radius:18px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+    animation:
+
+    notificationFloat 5s ease-in-out infinite;
+
+
+}
+
+
+
+
+@keyframes notificationFloat {
+
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-6px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+/* ---------- Smooth Scroll Reveal ---------- */
+
+
+.reveal,
+.section-card,
+.feature-card {
+
+
+    opacity:0;
+
+
+    transform:
+
+    translateY(30px);
+
+
+    animation:
+
+    revealUp .8s ease forwards;
+
+
+}
+
+
+
+@keyframes revealUp {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+
+        translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+
+}
+
+
+
+
+/* ---------- Premium Micro Interaction ---------- */
+
+
+a,
+button,
+.card,
+.feature-card {
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+a:hover {
+
+
+    text-shadow:
+
+    0 0 15px
+
+    rgba(56,189,248,.7);
+
+
+}
+/* =====================================================
+   PHASE 15
+   Final EduPath AI Product Finish
+===================================================== */
+
+
+/* ---------- Premium Input Focus ---------- */
+
+
+input,
+select,
+textarea {
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    border-radius:14px;
+
+
+    transition:.35s;
+
+
+    color:inherit;
+
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+
+    outline:none;
+
+
+    border-color:
+
+    #38bdf8;
+
+
+    box-shadow:
+
+
+    0 0 0 4px
+
+    rgba(56,189,248,.12),
+
+
+    0 0 25px
+
+    rgba(56,189,248,.25);
+
+
+    transform:
+
+    translateY(-2px);
+
+
+}
+
+
+
+
+/* ---------- AI Assistant Panel ---------- */
+
+
+.ai-panel,
+.assistant-card {
+
+
+    position:relative;
+
+
+    padding:30px;
+
+
+    border-radius:28px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.14),
+        rgba(255,255,255,.05)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    backdrop-filter:
+
+    blur(30px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(30px);
+
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.ai-panel::after,
+.assistant-card::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:180px;
+
+    height:180px;
+
+
+    right:-60px;
+
+    top:-60px;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(139,92,246,.35),
+        transparent 70%
+    );
+
+
+    animation:
+
+    assistantGlow 6s infinite;
+
+
+}
+
+
+
+@keyframes assistantGlow {
+
+
+    50% {
+
+
+        transform:
+
+        scale(1.4);
+
+
+        opacity:.5;
+
+
+    }
+
+}
+
+
+
+
+/* ---------- AI Avatar Glow ---------- */
+
+
+.ai-avatar {
+
+
+    width:80px;
+
+    height:80px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+    justify-content:center;
+
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+
+
+    box-shadow:
+
+    0 0 40px
+
+    rgba(139,92,246,.5);
+
+
+
+    animation:
+
+    avatarPulse 4s infinite;
+
+
+}
+
+
+
+@keyframes avatarPulse {
+
+
+    50% {
+
+
+        transform:
+
+        scale(1.08);
+
+
+        box-shadow:
+
+        0 0 70px
+
+        rgba(56,189,248,.6);
+
+
+    }
+
+}
+
+
+
+
+/* ---------- Premium Empty State ---------- */
+
+
+.empty-state {
+
+
+    text-align:center;
+
+
+    padding:50px 25px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    border:
+
+    1px dashed rgba(255,255,255,.25);
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+}
+
+
+
+.empty-state h3 {
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #a855f7
+    );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+/* ---------- Final Premium Shine Layer ---------- */
+
+
+body {
+
+
+    position:relative;
+
+
+}
+
+
+
+body .container {
+
+
+    animation:
+
+    finalAppear 1s ease;
+
+
+}
+
+
+
+@keyframes finalAppear {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        filter:
+
+        blur(8px);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+
+        filter:
+
+        blur(0);
+
+
+    }
+
+}
+/* =====================================================
+   PHASE 16.1
+   Student Dashboard Premium Foundation
+===================================================== */
+
+
+/* ---------- Dashboard Main Layout ---------- */
+
+
+.dashboard-container,
+.dashboard {
+
+
+    display:grid;
+
+
+    gap:25px;
+
+
+}
+
+
+
+/* ---------- AI Result Panels ---------- */
+
+
+.result-panel,
+.result-card,
+.ai-result {
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.14),
+        rgba(255,255,255,.05)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    border-radius:28px;
+
+
+    padding:30px;
+
+
+    backdrop-filter:
+
+    blur(25px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(25px);
+
+
+    box-shadow:
+
+
+    0 20px 50px
+
+    rgba(0,0,0,.18);
+
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.result-panel:hover,
+.result-card:hover,
+.ai-result:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    border-color:
+
+    rgba(56,189,248,.5);
+
+
+}
+
+
+
+/* ---------- Career Recommendation Card ---------- */
+
+
+.career-card {
+
+
+    padding:28px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        rgba(139,92,246,.18),
+        rgba(56,189,248,.12)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.career-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:200px;
+
+
+    height:200px;
+
+
+    right:-80px;
+
+
+    top:-80px;
+
+
+    background:
+
+
+    radial-gradient(
+        circle,
+        rgba(56,189,248,.35),
+        transparent 70%
+    );
+
+
+}
+
+
+
+
+
+/* ---------- Skill Progress Bars ---------- */
+
+
+.skill-bar {
+
+
+    height:12px;
+
+
+    width:100%;
+
+
+    background:
+
+
+    rgba(255,255,255,.1);
+
+
+    border-radius:50px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.skill-progress {
+
+
+    height:100%;
+
+
+    border-radius:50px;
+
+
+    background:
+
+
+    linear-gradient(
+        90deg,
+        #06b6d4,
+        #8b5cf6
+    );
+
+
+    box-shadow:
+
+
+    0 0 20px
+
+    rgba(56,189,248,.45);
+
+
+
+    animation:
+
+
+    progressGlow 3s infinite;
+
+
+}
+
+
+
+
+@keyframes progressGlow {
+
+
+    50% {
+
+
+        filter:
+
+        brightness(1.3);
+
+
+    }
+
+}
+
+
+
+
+
+/* ---------- Roadmap Timeline ---------- */
+
+
+.roadmap {
+
+
+    position:relative;
+
+
+    padding-left:35px;
+
+
+}
+
+
+
+.roadmap::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:10px;
+
+
+    top:0;
+
+
+    height:100%;
+
+
+    width:3px;
+
+
+    background:
+
+
+    linear-gradient(
+        #06b6d4,
+        #8b5cf6
+    );
+
+
+}
+
+
+
+.roadmap-item {
+
+
+    position:relative;
+
+
+    margin-bottom:30px;
+
+
+    padding:20px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+
+    rgba(255,255,255,.06);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+}
+
+
+
+
+.roadmap-item::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:-32px;
+
+
+    top:25px;
+
+
+    width:16px;
+
+
+    height:16px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    #38bdf8;
+
+
+    box-shadow:
+
+
+    0 0 20px
+
+    #38bdf8;
+
+
+}
+
+
+
+
+/* ---------- Dashboard Titles ---------- */
+
+
+.dashboard h2,
+.dashboard h3 {
+
+
+    background:
+
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #a855f7
+    );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+}
+/* =====================================================
+   PHASE 16.2
+   AI Career Prediction Visualization
+===================================================== */
+
+
+/* ---------- AI Prediction Badge ---------- */
+
+
+.prediction-badge,
+.career-badge,
+.ai-badge {
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+    padding:10px 18px;
+
+
+    border-radius:50px;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        rgba(56,189,248,.2),
+        rgba(139,92,246,.2)
+    );
+
+
+    border:
+
+    1px solid rgba(56,189,248,.4);
+
+
+    color:#38bdf8;
+
+
+    font-weight:600;
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+    -webkit-backdrop-filter:
+
+    blur(20px);
+
+
+
+}
+
+
+
+
+.prediction-badge::before,
+.career-badge::before,
+.ai-badge::before {
+
+
+    content:"";
+
+
+    width:10px;
+
+
+    height:10px;
+
+
+    border-radius:50%;
+
+
+    background:#22c55e;
+
+
+    box-shadow:
+
+
+    0 0 18px
+
+    #22c55e;
+
+
+}
+
+
+
+
+/* ---------- AI Confidence Score ---------- */
+
+
+.confidence-card {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+    padding:35px;
+
+
+}
+
+
+
+
+
+.confidence-circle {
+
+
+    width:160px;
+
+
+    height:160px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    background:
+
+
+    conic-gradient(
+
+        #06b6d4,
+
+        #8b5cf6,
+
+        rgba(255,255,255,.1)
+
+    );
+
+
+
+    position:relative;
+
+
+    animation:
+
+
+    circleRotate 8s linear infinite;
+
+
+}
+
+
+
+
+
+.confidence-circle::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:12px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    #111827;
+
+
+}
+
+
+
+
+
+.confidence-value {
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+    font-size:40px;
+
+
+    font-weight:800;
+
+
+    background:
+
+
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #a855f7
+    );
+
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+@keyframes circleRotate {
+
+
+    from {
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+
+/* ---------- Recommendation Highlight Cards ---------- */
+
+
+.recommendation-card {
+
+
+    padding:22px;
+
+
+    border-radius:22px;
+
+
+    background:
+
+
+    rgba(255,255,255,.07);
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.12);
+
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+.recommendation-card:hover {
+
+
+    transform:
+
+    translateX(8px);
+
+
+    border-color:
+
+    rgba(56,189,248,.5);
+
+
+    box-shadow:
+
+
+    0 15px 35px
+
+    rgba(56,189,248,.15);
+
+
+}
+
+
+
+
+
+/* ---------- Skill Match Tags ---------- */
+
+
+.skill-tag {
+
+
+    display:inline-flex;
+
+
+    padding:
+
+    8px 14px;
+
+
+    margin:5px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+
+    rgba(139,92,246,.18);
+
+
+    border:
+
+
+    1px solid rgba(139,92,246,.35);
+
+
+
+    color:#c4b5fd;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.skill-tag:hover {
+
+
+    background:
+
+
+    rgba(56,189,248,.2);
+
+
+    transform:
+
+    translateY(-3px);
+
+
+}
+
+
+
+
+
+/* ---------- AI Result Entrance ---------- */
+
+
+.ai-result,
+.prediction-card {
+
+
+    animation:
+
+
+    resultAppear .8s ease;
+
+
+}
+
+
+
+@keyframes resultAppear {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+        scale(.95)
+
+        translateY(20px);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+        scale(1)
+
+        translateY(0);
+
+
+    }
+
+
+}
+/* =====================================================
+   PHASE 16.3
+   Learning Roadmap & Study Planner Premium UI
+===================================================== */
+
+
+/* ---------- Learning Path Container ---------- */
+
+
+.learning-path,
+.study-plan,
+.resource-section {
+
+
+    display:grid;
+
+
+    gap:22px;
+
+
+}
+
+
+
+
+
+/* ---------- Learning Roadmap Cards ---------- */
+
+
+.learning-card,
+.course-card,
+.resource-card {
+
+
+    position:relative;
+
+
+    padding:25px;
+
+
+    border-radius:24px;
+
+
+    background:
+
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.04)
+    );
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    backdrop-filter:
+
+
+    blur(25px);
+
+
+    -webkit-backdrop-filter:
+
+
+    blur(25px);
+
+
+
+    transition:.4s;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.learning-card::before,
+.course-card::before,
+.resource-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+    right:-40px;
+
+
+    bottom:-40px;
+
+
+
+    background:
+
+
+    radial-gradient(
+        circle,
+        rgba(56,189,248,.25),
+        transparent 70%
+    );
+
+
+}
+
+
+
+
+
+.learning-card:hover,
+.course-card:hover,
+.resource-card:hover {
+
+
+    transform:
+
+
+    translateY(-10px);
+
+
+    border-color:
+
+
+    rgba(56,189,248,.45);
+
+
+
+    box-shadow:
+
+
+    0 20px 45px
+
+    rgba(56,189,248,.15);
+
+
+}
+
+
+
+
+
+/* ---------- Course Progress ---------- */
+
+
+.course-progress {
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+.progress-track {
+
+
+    height:10px;
+
+
+    width:100%;
+
+
+    background:
+
+
+    rgba(255,255,255,.1);
+
+
+
+    border-radius:50px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.progress-fill {
+
+
+    height:100%;
+
+
+    border-radius:50px;
+
+
+    background:
+
+
+    linear-gradient(
+        90deg,
+        #06b6d4,
+        #8b5cf6
+    );
+
+
+    box-shadow:
+
+
+    0 0 20px
+
+    rgba(139,92,246,.5);
+
+
+
+    animation:
+
+
+    progressMove 3s ease;
+
+
+}
+
+
+
+
+@keyframes progressMove {
+
+
+    from {
+
+
+        width:0;
+
+
+    }
+
+
+}
+
+
+
+
+/* ---------- Study Planner Timeline ---------- */
+
+
+.study-timeline {
+
+
+    position:relative;
+
+
+    padding-left:40px;
+
+
+}
+
+
+
+
+.study-timeline::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:12px;
+
+
+    top:0;
+
+
+    bottom:0;
+
+
+    width:3px;
+
+
+    background:
+
+
+    linear-gradient(
+        #06b6d4,
+        #8b5cf6
+    );
+
+
+}
+
+
+
+
+.study-item {
+
+
+    position:relative;
+
+
+    margin-bottom:28px;
+
+
+    padding:20px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+
+    rgba(255,255,255,.07);
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.12);
+
+
+}
+
+
+
+
+.study-item::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:-35px;
+
+
+    top:25px;
+
+
+    width:18px;
+
+
+    height:18px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    #8b5cf6;
+
+
+    box-shadow:
+
+
+    0 0 20px
+
+    #8b5cf6;
+
+
+}
+
+
+
+
+
+/* ---------- AI Recommended Resource Badge ---------- */
+
+
+.resource-badge {
+
+
+    display:inline-flex;
+
+
+    padding:
+
+
+    7px 14px;
+
+
+    border-radius:40px;
+
+
+    background:
+
+
+    rgba(34,197,94,.15);
+
+
+    border:
+
+
+    1px solid rgba(34,197,94,.35);
+
+
+
+    color:#86efac;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+/* ---------- Learning Icons ---------- */
+
+
+.learning-icon {
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:18px;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+
+
+    box-shadow:
+
+
+    0 0 30px
+
+    rgba(56,189,248,.35);
+
+
+
+    margin-bottom:18px;
+
+
+}
+/* =====================================================
+   PHASE 16.4
+   Student Dashboard Integration Polish
+===================================================== */
+
+
+/* ---------- Dashboard Header ---------- */
+
+
+.dashboard-header,
+.student-header {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    padding:30px;
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        rgba(139,92,246,.18),
+        rgba(56,189,248,.12)
+    );
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.15);
+
+
+    backdrop-filter:
+
+
+    blur(25px);
+
+
+    -webkit-backdrop-filter:
+
+
+    blur(25px);
+
+
+
+}
+
+
+
+
+
+/* ---------- Student Profile Card ---------- */
+
+
+.profile-card {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    rgba(255,255,255,.07);
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.14);
+
+
+
+}
+
+
+
+
+
+.profile-avatar {
+
+
+    width:75px;
+
+
+    height:75px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #06b6d4,
+        #8b5cf6
+    );
+
+
+    font-size:30px;
+
+
+    box-shadow:
+
+
+    0 0 35px
+
+    rgba(56,189,248,.4);
+
+
+}
+
+
+
+
+
+/* ---------- Quick Action Cards ---------- */
+
+
+.quick-action,
+.action-card {
+
+
+    padding:22px;
+
+
+    border-radius:22px;
+
+
+    background:
+
+
+    rgba(255,255,255,.08);
+
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.12);
+
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+.quick-action:hover,
+.action-card:hover {
+
+
+    transform:
+
+
+    translateY(-8px);
+
+
+    border-color:
+
+
+    rgba(139,92,246,.5);
+
+
+
+    box-shadow:
+
+
+    0 20px 40px
+
+    rgba(139,92,246,.18);
+
+
+}
+
+
+
+
+
+/* ---------- AI Activity Feed ---------- */
+
+
+.activity-feed {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+.activity-item {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+    padding:18px;
+
+
+    border-radius:18px;
+
+
+    background:
+
+
+    rgba(255,255,255,.06);
+
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.1);
+
+
+
+}
+
+
+
+
+
+.activity-dot {
+
+
+    width:12px;
+
+
+    height:12px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    #22c55e;
+
+
+    box-shadow:
+
+
+    0 0 15px
+
+    #22c55e;
+
+
+}
+
+
+
+
+
+/* ---------- Dashboard Grid ---------- */
+
+
+.dashboard-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+/* ---------- Final Dashboard Glow ---------- */
+
+
+.dashboard-container {
+
+
+    animation:
+
+
+    dashboardEntry 1s ease;
+
+
+}
+
+
+
+
+@keyframes dashboardEntry {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+
+        translateY(40px);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+
+        translateY(0);
+
+
+    }
+
+}
+
+
