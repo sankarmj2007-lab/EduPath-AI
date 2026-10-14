@@ -1,6 +1,7 @@
 # EduPath AI
-    🔗 **Live Demo:** https://edupath-ai-7hv0.onrender.com
-    
+
+🔗 **Live Demo:** https://edupath-ai-7hv0.onrender.com
+
 AI-powered education and career guidance platform.
 Final project of the IBM online internship.
 
@@ -27,6 +28,7 @@ a weekly study plan, and a downloadable PDF report.
 | Backend | Python, Flask |
 | AI / ML | scikit-learn (Random Forest), TF-IDF, pandas, NumPy |
 | Data | CSV and JSON files |
+| Deployment | GitHub, Render |
 
 ## How the AI Works
 
@@ -59,7 +61,7 @@ student responses.
 ## Project Structure
 
 ```
-EduPath-AI-v2/
+EduPath-AI/
   ai/          AI modules (profile, skill gap, career model, roadmap, ...)
   backend/     Flask API (app.py)
   database/    Datasets and the synthetic dataset generator
@@ -77,8 +79,7 @@ pip install -r requirements.txt
 python backend/app.py
 ```
 
-The backend runs at http://127.0.0.1:5000.
-Then open `frontend/index.html` in Chrome or Edge, fill the form and click
+Then open http://127.0.0.1:5000 in Chrome or Edge, fill the form and click
 "Analyze My Profile". Use "Download PDF" and choose "Save as PDF".
 
 ### Retrain the model (optional)
@@ -88,6 +89,16 @@ python database/generate_student_profiles.py
 python ai/career_model.py train
 python ai/career_model.py demo
 ```
+
+## Deployment
+
+The app is deployed on Render (free plan) using:
+
+- Build command: `pip install -r requirements.txt`
+- Start command: `gunicorn backend.app:app --timeout 120 --workers 1`
+
+The free plan sleeps after 15 minutes of inactivity, so the first load can
+take up to a minute.
 
 ## Limitations
 
