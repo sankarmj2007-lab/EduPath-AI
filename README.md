@@ -1,5 +1,6 @@
 # EduPath AI
-
+    🔗 **Live Demo:** https://edupath-ai-7hv0.onrender.com
+    
 AI-powered education and career guidance platform.
 Final project of the IBM online internship.
 
